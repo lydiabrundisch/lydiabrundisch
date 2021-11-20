@@ -30,3 +30,17 @@ body {
 html {
 	background-color: #dbdbdb;
 }
+
+.brains {
+	float: left;
+	width: 30%; 
+	margin-right: 10px; 
+	margin-top: 28px;
+}
+
+.psi {
+	float: right;
+	width: 30%; 
+	margin-left: 10px;
+	margin-top: 32px; 
+}
