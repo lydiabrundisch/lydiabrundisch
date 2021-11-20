@@ -1,20 +1,19 @@
 h1 {
 	font-size: 60px;
-	text-align: center;
-	color: #020b1a;
 }
 
 h2 {
 	font-size: 45px;
-	text-align: center;
-	color: #07152b;
 }
 
 body {
-	color: #14171c;
 	text-align: center;
+	color: #020b1a;
+	font-family: Times New Roman, Times, serif;
+	font-size: 30px;
+	line-height: 1.8;
 }
 
 html {
-	background-color: #92aad1;
+	background-color: #d5dff0;
 }
