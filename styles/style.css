@@ -10,6 +10,12 @@ h3 {
 	font-size:18px;
 }
 
+p {
+	background-color: white;
+	padding: 12px;
+	border-radius: 4px;
+}
+
 body {
 	text-align: center;
 	width: 500px;
@@ -27,12 +33,11 @@ html {
 
 span {
 	background-color: white;
-	padding: 15px;
-	border-radius: 5px;
+	padding: 12px;
+	border-radius: 4px;
 }
 
 img {
 	width: 250px;
-	border-radius: 5px;
 	align: center;
 }
