@@ -1,19 +1,38 @@
 h1 {
-	font-size: 55px;
+	font-size: 24px;
 }
 
 h2 {
-	font-size: 35px;
+	font-size: 20px;
+}
+
+h3 {
+	font-size:18px;
 }
 
 body {
 	text-align: center;
-	color: #020b1a;
-	font-family: Times New Roman, Times, serif;
-	font-size: 25px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #242424;
+	font-family: Monaco, "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
 	line-height: 1.8;
 }
 
 html {
-	background-color: #d5dff0;
+	background-color: #dbdbdb;
+}
+
+span {
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+img {
+	width: 250px;
+	border-radius: 5px;
+	align: center;
 }
