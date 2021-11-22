@@ -1,13 +1,17 @@
 h1 {
-	font-size: 24px;
-}
-
-h2 {
 	font-size: 20px;
 }
 
+h2 {
+	font-size: 18px;
+}
+
 h3 {
-	font-size:18px;
+	font-size:16px;
+}
+
+h4 {
+	font-size:14px;
 }
 
 p {
@@ -24,7 +28,7 @@ body {
 	color: #242424;
 	font-family: Monaco, "Lucida Console", "Courier New", monospace;
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 2.0;
 }
 
 html {
