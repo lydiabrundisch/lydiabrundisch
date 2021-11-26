@@ -21,30 +21,30 @@ p {
 }
 
 body {
-	text-align: center;
+	text-align: justify;
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	color: #242424;
-	font-family: Monaco, "Lucida Console", "Courier New", monospace;
+	font-family: helvetica, verdana, arial, sans-serif;
 	font-size: 14px;
 	line-height: 2.0;
 }
 
 html {
+  	overflow-y: scroll; 
 	background-color: #dbdbdb;
 }
 
 .brains {
-	float: left;
-	width: 30%; 
-	margin-right: 10px; 
-	margin-top: 28px;
+	float: right;
+	width: 18%; 
+	margin-top: 10px; 
 }
 
-.psi {
+.portrait {
 	float: right;
-	width: 30%; 
-	margin-left: 10px;
+	width: 40%; 
+	margin-left: 32px;
 	margin-top: 32px; 
 }
