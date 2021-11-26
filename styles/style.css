@@ -1,21 +1,25 @@
 h1 {
-	font-size: 20px;
+	font-size: 32px;
+	font-weight: 400;
 }
 
 h2 {
 	font-size: 18px;
+	font-weight: 700;
 }
 
 h3 {
 	font-size:16px;
+	font-weight: 400;
 }
 
 h4 {
 	font-size:14px;
+	font-weight: 700;
 }
 
 p {
-	background-color: white;
+	background-color: #F7f1d8;
 	padding: 12px;
 	border-radius: 4px;
 }
@@ -25,26 +29,35 @@ body {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #242424;
+	color: #0b0605;
 	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 1.7;
 }
 
 html {
   	overflow-y: scroll; 
-	background-color: #dbdbdb;
+	background-color: #0e0b0a;
+}
+
+img {
+	border-radius: 4px;
 }
 
 .brains {
 	float: right;
 	width: 18%; 
-	margin-top: 10px; 
+	margin-top: 20px; 
 }
 
-.portrait {
+.profile {
 	float: right;
 	width: 40%; 
 	margin-left: 32px;
 	margin-top: 32px; 
+}
+
+a {
+	color: #c02729;
+	text-decoration: none;
 }
