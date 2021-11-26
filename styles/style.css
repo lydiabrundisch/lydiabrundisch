@@ -20,13 +20,13 @@ h4 {
 
 p {
 	background-color: #F7f1d8;
-	padding: 12px;
+	padding: 40px;
 	border-radius: 4px;
 }
 
 body {
 	text-align: justify;
-	width: 500px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	color: #0b0605;
@@ -46,15 +46,16 @@ img {
 
 .brains {
 	float: right;
-	width: 18%; 
-	margin-top: 20px; 
+	width: 13%; 
+	margin-left: 28px;
+	margin-top: 42px; 
 }
 
 .profile {
 	float: right;
-	width: 40%; 
-	margin-left: 32px;
-	margin-top: 32px; 
+	width: 23%; 
+	margin-left: 28px;
+	margin-top: 28px; 
 }
 
 a {
