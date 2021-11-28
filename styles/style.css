@@ -1,6 +1,17 @@
+body {
+	text-align: justify;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #cccccc;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
 h1 {
 	font-size: 32px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 h2 {
@@ -9,8 +20,8 @@ h2 {
 }
 
 h3 {
-	font-size:16px;
-	font-weight: 400;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 h4 {
@@ -19,46 +30,30 @@ h4 {
 }
 
 p {
-	background-color: #F7f1d8;
-	padding: 40px;
+	background-color: #444444;
+	padding: 10px;
 	border-radius: 4px;
-}
-
-body {
-	text-align: justify;
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	color: #0b0605;
-	font-family: arial, verdana, helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 1.7;
+	box-shadow: 5px 5px 5px #777777;
 }
 
 html {
   	overflow-y: scroll; 
-	background-color: #0e0b0a;
+	background-color: #333333;
 }
 
 img {
 	border-radius: 4px;
-}
-
-.brains {
 	float: right;
-	width: 13%; 
-	margin-left: 28px;
-	margin-top: 42px; 
 }
 
 .profile {
-	float: right;
-	width: 23%; 
-	margin-left: 28px;
-	margin-top: 28px; 
+	margin: 20px;
+	box-shadow: 5px 5px 5px white;
+	box-shadow: 5px 5px 5px #777777;
 }
 
 a {
-	color: #c02729;
+	color: #cccccc;
 	text-decoration: none;
+	padding: 20px;
 }
