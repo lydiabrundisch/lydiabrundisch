@@ -3,7 +3,7 @@ body {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #cccccc;
+	color: #ebeeff;
 	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
@@ -21,12 +21,13 @@ h2 {
 
 h3 {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 h4 {
 	font-size:14px;
 	font-weight: 700;
+	color: #74e4e4;
 }
 
 p {
@@ -52,7 +53,7 @@ img {
 }
 
 a {
-	color: #cccccc;
+	color: #74e4e4;
 	text-decoration: none;
 	padding: 20px;
 }
