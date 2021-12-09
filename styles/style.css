@@ -37,7 +37,7 @@ p {
 	background-color: #444444;
 	padding: 10px;
 	border-radius: 4px;
-	box-shadow: 5px 5px 5px #777777;
+	box-shadow: 5px 5px 5px #74e4e4;
 }
 
 html {
@@ -52,7 +52,7 @@ img {
 
 .profile {
 	margin: 20px;
-	box-shadow: 5px 5px 5px #777777;
+	box-shadow: 5px 5px 5px #74e4e4;
 }
 
 a {
