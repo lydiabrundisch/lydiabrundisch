@@ -34,7 +34,7 @@ h4 {
 }
 
 p {
-	background-color: #444444;
+	background-color: #222222;
 	padding: 10px;
 	border-radius: 4px;
 	box-shadow: 5px 5px 5px #74e4e4;
@@ -42,7 +42,7 @@ p {
 
 html {
   	overflow-y: scroll; 
-	background-color: #333333;
+	background-color: #111111;
 }
 
 img {
