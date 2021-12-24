@@ -77,8 +77,10 @@ a {
 	box-shadow: 5px 5px 5px #74e4e4;
 }
 
-.license {
-	float: left;
+.entry_banner {
+	margin: 10px;
+	margin-bottom: 25px;
+	box-shadow: 5px 5px 5px #74e4e4;
 }
 
 .entry {
