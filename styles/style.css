@@ -27,10 +27,8 @@ h2 {
 	font-size:14px;
 	font-weight: 700;
 	color: #74e4e4;
-	text-shadow: 0px 0px 3px #00aaaa;
-	color: #74e4e4;
 	text-decoration: none;
-	text-shadow: 0px 0px 3px #00aaaa;
+	text-shadow: 0px 0px 3px #74e4e4;
 }
 
 h3 {
@@ -51,7 +49,7 @@ img {
 a {
 	color: #74e4e4;
 	text-decoration: none;
-	text-shadow: 0px 0px 3px #00aaaa;
+	text-shadow: 0px 0px 3px #74e4e4;
 }
 
 .p {
@@ -70,12 +68,12 @@ a {
 
 .brain {
 	margin: 5px;
-	filter: drop-shadow(5px 5px 5px #74e4e4);
+	filter: drop-shadow(5px 5px 5px #25bbbb);
 }
 
 .profile {
 	margin: 20px;
-	box-shadow: 5px 5px 5px #74e4e4;
+	filter: drop-shadow(5px 5px 5px #25bbbb);
 }
 
 .entry_banner {
