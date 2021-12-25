@@ -70,6 +70,7 @@ a {
 
 .brain {
 	margin: 5px;
+	filter: drop-shadow(5px 5px 5px #74e4e4);
 }
 
 .profile {
