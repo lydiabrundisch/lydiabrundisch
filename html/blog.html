@@ -41,28 +41,33 @@
 
 	<div class="p"><div class="m">
 		<h2>
-			<a id="entry_three"> </a>
-			Figuring out data visualization with Vega-Lite
+			<a id="vega_lite"> </a>
+			Data vis with Vega-Lite
 		</h2>
 		<div class="entry">
-			<a id="entry_three"> </a>
+			<a id="vega_lite"> </a>
 		<div id="vis"></div>
 		<script>
 			var vlSpec = {
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				"width": 200,
+				"height": 200,
+				"group": {
+					"fill": "#74e4e4"
+				}
 				data: {url: "../applications/predator_prey_data.csv"},
 				mark: "bar",
 				encoding: {
-					x: {bin: "true", field: "category", type: "nominal"},
-					y: {aggregate: "average", field: "rt", type: "quantitative"}
+					x: {bin: "true", field: "Category", type: "nominal"},
+					y: {aggregate: "average", field: "RT", type: "quantitative"}
 				}
 			};
 			vegaEmbed('#vis', vlSpec);
 		</script>
 
-
-			<br> <br> <br> <br> <br> <br> <br> <br> 
-			<a href="#entry_three"> &#128279; </a>
+			I spent this evening messing around with Vega-Lite to create data visualizations directly on this website. The bar chart above uses data from the predator-prey simulation experiment I conducted last semester (for which the write-up will follow in January).
+			<br> <br> 
+			<a href="#vega-lite"> &#128279; </a> &nbsp date: 30-12-2021, tags: vega-lite, data visualization, coding
 		</div>
 	</div> </div>
 
@@ -92,13 +97,13 @@
 
 	<div class="p"><div class="m">
 		<h2>
-			<a id="entry_two"> </a>
-			Entry 2
+			<a id="entry_three"> </a>
+			Entry 3
 		</h2>
 		<div class="entry">
 			This section is still under development.
 			<br> <br> <br> <br> <br> <br> <br> <br>
-			<a href="#entry_two"> &#128279; </a> 
+			<a href="#entry_three"> &#128279; </a> 
 		</div>
 	</div> </div>
 
@@ -110,7 +115,6 @@
 			Entry 4
 		</h2>
 		<div class="entry">
-			<a id="entry_three"> </a>
 			This section is still under development.
 			<br> <br> <br> <br> <br> <br> <br> <br> 
 			<a href="#entry_four"> &#128279; </a>
