@@ -52,14 +52,13 @@
 				$schema: "https://vega.github.io/schema/vega-lite/v5.json",
 				width: "200",
 				height: "200",
-				background: "#0c1117",
-				view: "#0c1117",
+				background: {color: "#0c1117"},
+				view: {color: "#0c1117"},
 				data: {url: "../applications/predator_prey_data.csv"},
-				mark: "bar",
+				mark: {type: "bar", color: "#74e4e4"},
 				encoding: {
 					x: {bin: "true", field: "Category", type: "nominal"},
 					y: {aggregate: "average", field: "RT", type: "quantitative"}
-					color: {value: "#74e4e4"}
 				}
 			};
 			vegaEmbed("#vis", vlSpec);
