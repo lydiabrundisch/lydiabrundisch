@@ -52,17 +52,20 @@
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
 				width: "200",
 				height: "200",
+				background: {value: "#0c1117"},
 				data: {url: "../applications/predator_prey_data.csv"},
 				mark: "bar",
 				encoding: {
 					x: {bin: "true", field: "Category", type: "nominal"},
 					y: {aggregate: "average", field: "RT", type: "quantitative"}
+					color: {value: "#74e4e4"}
 				}
 			};
 			vegaEmbed('#vis', vlSpec);
 		</script>
 
-			I spent this evening messing around with Vega-Lite to create data visualizations directly on this website. The bar chart above uses data from the predator-prey simulation experiment I conducted last semester (for which the write-up will follow in January).
+			<br> <br>
+			I spent this evening messing around with <a href="https://vega.github.io/vega-lite/" Vega-Lite</a> to create data visualizations directly on this website. The bar chart above uses data from the predator-prey simulation experiment I conducted last semester (for which the write-up will follow in January).
 			<br> <br> 
 			<a href="#vega_lite"> &#128279; </a> &nbsp date: 30-12-2021, tags: vega-lite, data visualization, coding
 		</div>
@@ -84,7 +87,7 @@
 		>
 
 		<div class="entry">
-			Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by Eric Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub written in R, so I wanted to share my work so far. You can find my code for the first ten puzzles as of today (24-12-2021) on <a href="https://github.com/lydiabrundisch/adventofcode"> my GitHub repository </a>. To read the full tasks and get sample data to test my code, check the <a href="https://adventofcode.com/2021"> website of the project </a>.
+			Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by Eric Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub written in R, so I wanted to share my work so far. You can find my code for the first ten puzzles as of today (24-12-2021) on <a href="https://github.com/lydiabrundisch/adventofcode"> my GitHub repository</a>. To read the full tasks and get sample data to test my code, check the <a href="https://adventofcode.com/2021"> website of the project</a>.
 			<br> <br>
 			<a href="#advent_of_code_2021"> &#128279; </a> &nbsp date: 24-12-2021, tags: R, coding
 		</div>
