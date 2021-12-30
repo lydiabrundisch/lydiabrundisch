@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lydia Brundisch - Feed</title>
+    <title>Lydia Brundisch - Blog</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
   </head>
   <body>
 		<img src="../images/brains.png"
@@ -31,6 +34,36 @@
 		<h1>
 			Blog
 		</h1>
+	</div> </div>
+
+
+	<br>
+
+	<div class="p"><div class="m">
+		<h2>
+			<a id="entry_three"> </a>
+			Figuring out data visualization with Vega-Lite
+		</h2>
+		<div class="entry">
+			<a id="entry_three"> </a>
+		<div id="vis"></div>
+		<script>
+			var vlSpec = {
+				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				data: {url: "../applications/predator_prey_data.csv"},
+				mark: "bar",
+				encoding: {
+					x: {bin: "true", field: "category", type: "nominal"},
+					y: {aggregate: "average", field: "rt", type: "quantitative"}
+				}
+			};
+			vegaEmbed('#vis', vlSpec);
+		</script>
+
+
+			<br> <br> <br> <br> <br> <br> <br> <br> 
+			<a href="#entry_three"> &#128279; </a>
+		</div>
 	</div> </div>
 
 	<br>
@@ -66,21 +99,6 @@
 			This section is still under development.
 			<br> <br> <br> <br> <br> <br> <br> <br>
 			<a href="#entry_two"> &#128279; </a> 
-		</div>
-	</div> </div>
-
-	<br>
-
-	<div class="p"><div class="m">
-		<h2>
-			<a id="entry_three"> </a>
-			Entry 3
-		</h2>
-		<div class="entry">
-			<a id="entry_three"> </a>
-			This section is still under development.
-			<br> <br> <br> <br> <br> <br> <br> <br> 
-			<a href="#entry_three"> &#128279; </a>
 		</div>
 	</div> </div>
 
