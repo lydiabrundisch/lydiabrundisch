@@ -49,10 +49,11 @@
 		<div id="vis"></div>
 		<script>
 			var vlSpec = {
-				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				$schema: "https://vega.github.io/schema/vega-lite/v5.json",
 				width: "200",
 				height: "200",
-				background: #0c1117,
+				background: "#0c1117",
+				view: "#0c1117",
 				data: {url: "../applications/predator_prey_data.csv"},
 				mark: "bar",
 				encoding: {
@@ -61,7 +62,7 @@
 					color: {value: "#74e4e4"}
 				}
 			};
-			vegaEmbed('#vis', vlSpec);
+			vegaEmbed("#vis", vlSpec);
 		</script>
 
 			<br> <br>
