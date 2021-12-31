@@ -27,15 +27,14 @@ h1 {
 }
 
 h2 {
-	font-size:14px;
+	font-size: 18px;
 	font-weight: 700;
-	color: #74e4e4;
 	text-decoration: none;
-	text-shadow: 0px 0px 3px #74e4e4;
+	text-shadow: 0px 0px 5px #1c8a8a;
 }
 
 h3 {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
 	text-shadow: 0px 0px 2px #74e4e4;
 }
@@ -50,9 +49,10 @@ img {
 }
 
 a {
-	color: #74e4e4;
+	color: #ebeeff;
 	text-decoration: none;
-	text-shadow: 0px 0px 3px #74e4e4;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px #25BBBB;
 }
 
 .p {
@@ -64,8 +64,8 @@ a {
 }
 
 .m {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-left: 30px;
 	margin-right: 30px;
 }
@@ -81,8 +81,9 @@ a {
 }
 
 .entry_banner {
-	margin: 10px;
-	margin-bottom: 25px;
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background: #0c1117;
 	border-radius: 4px;
 	display: flex;
