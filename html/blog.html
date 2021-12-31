@@ -49,15 +49,41 @@
 		<div id="vis"></div>
 		<script>
 			var vlSpec = {
-				$schema: "https://vega.github.io/schema/vega-lite/v5.json",
-				width: "200",
-				height: "200",
-				background: "black",
-				data: {url: "../applications/predator_prey_data.csv"},
-				mark: {type: "bar", color: "#74e4e4"},
-				encoding: {
-					x: {bin: "true", field: "Category", type: "nominal"},
-					y: {aggregate: "average", field: "RT", type: "quantitative"}
+				"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+				"width": 280,
+				"height": 300,
+				"title": "Figure 1. Mean RT to target in appetitive, aversive, and neutral trials.",
+				"background": "#0c1117",
+				"description": "Bar graph showing the mean RT in response to appetitive, aversive, and neutral target trials in the predator-prey simulation experiment.",
+				"config": {
+					"axis": {
+						"labelColor": "#ebeeff",
+						"domainColor": "#ebeeff",
+						"titleColor": "#ebeeff",
+						"grid": false, 
+						"labelAngle": 0
+					},
+					"legend": {
+						"labelColor": "#ebeeff",
+						"titleColor": "#ebeeff"
+					},
+					"title": {
+						"color": "white",
+						"orient": "bottom",
+						"anchor": "start"
+					},
+					"view": {"stroke": null}
+				},
+				"data": {"url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/367cd628b19d537b000197758b0526223bef9957/applications/predator_prey_data.csv"},
+				"mark": {"type": "bar", "color": "#74e4e4"},
+				"encoding": {
+					"x": {"field": "Category", "type": "nominal"},
+					"y": {"aggregate": "average", "field": "RT", "type": "quantitative", "title": "Mean RT"},
+					"color": {"field": "Category", "scale": {"range": ["#74e4e4", "#e37474", "#74e374"]}, 
+						"legend": {
+							"labelExpr": "{'1' : 'Appetitive target', '2' : 'Aversive target', '3' : 'Neutral target'}[datum.label]"
+						}
+					}
 				}
 			};
 			vegaEmbed("#vis", vlSpec);
