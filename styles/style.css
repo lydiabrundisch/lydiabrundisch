@@ -85,7 +85,8 @@ a {
 	margin-bottom: 25px;
 	background: #0c1117;
 	border-radius: 4px;
-	float: center;
+	display: flex;
+	justify-content: center;
 }
 
 .entry {
