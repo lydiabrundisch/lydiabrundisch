@@ -46,9 +46,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 280,
   "height": 300,
-  "title": "Figure 1. Mean RT to target in appetitive, aversive, and neutral trials.",
+  "title": "Figure 1. Mean RT to trials in appetitive, aversive, and neutral trials.",
   "background": "#0c1117",
-  "description": "Bar graph showing the mean RT in response to appetitive, aversive, and neutral target trials in the predator-prey simulation experiment.",
+  "description": "Bar graph showing the mean RT in response to appetitive, aversive, and neutral trials trialss in the predator-prey simulation experiment.",
   "config": {
     "axis": {
       "labelColor": "white",
@@ -72,13 +72,14 @@
         "aggregate": "average",
         "field": "RT",
         "type": "quantitative",
-        "title": "Mean RT"
+        "title": "Mean RT",
+        "scale": {"zero": false}
       },
       "color": {
         "field": "Category",
         "scale": {"range": ["#16dbe3", "#e197f3", "#6467ef"]},
         "legend": {
-          "labelExpr": "{'1' : 'Appetitive target', '2' : 'Aversive target', '3' : 'Neutral target'}[datum.label]"
+          "labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]"
         }
       }
     }
@@ -95,7 +96,7 @@
         "field": "Category",
         "scale": {"range": ["#16dbe3", "#e197f3", "#6467ef"]},
         "legend": {
-          "labelExpr": "{'1' : 'Appetitive target', '2' : 'Aversive target', '3' : 'Neutral target'}[datum.label]"
+          "labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]"
         }
       }
     }
@@ -106,7 +107,7 @@
 		</div>
 
 			<br>
-			I spent this evening messing around with the <a href="https://vega.github.io/vega-lite/" class="entrylink"> Vega-Lite library</a> for JavaScript to display simple graphs. As this is my first encounter with JavaScript, it took quite a bit of time to create even this simple bar chart above, but I think I have figured out the basics for my use case now. I used a tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this exercise. I am going to provide a full write-up of the experiment, the code, data and metadata in January.
+			I spent this evening messing around with the <a href="https://vega.github.io/vega-lite/" class="entrylink"> Vega-Lite library</a> for JavaScript to display simple graphs. As this is my first encounter with JavaScript, it took quite a bit of time to create the dot plot with standard error bars above, but I think I have figured out the basics for my use case now. I used a tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this exercise. I am going to provide a full write-up of the experiment, the code, data and metadata in January.
 			<br> <br> 
 			<a href="#vega_lite"> &#128279; </a> date: 30-12-2021, tags: vega-lite, data visualization, coding
 
