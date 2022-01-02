@@ -101,3 +101,11 @@ a.entrylink {
 .main {
 	margin-top: 100px
 }
+
+h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -135px; 
+  height: 135px; 
+  visibility: hidden; 
+}
