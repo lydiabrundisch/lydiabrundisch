@@ -112,3 +112,29 @@ h2::before {
   height: 135px; 
   visibility: hidden; 
 }
+
+.button {
+	border-radius: 4px;
+	background-color: #99bbff;
+	display:block;
+	height: 3px;
+	width: 80px;
+	position: absolute;
+    top: 0px;
+}
+
+#home {
+    left: 4.2%;
+}
+
+#blog {
+    left: 13.1%;
+}
+
+#portfolio {
+    left: 23%;
+}
+
+#about {
+    left: 33.5%;
+}
