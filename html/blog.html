@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lydia Brundisch - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -47,7 +50,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 280,
   "height": 300,
-  "title": "Figure 2. Plot of Whatsapp messages by day.",
+  "title": "Figure 1. Plot of Whatsapp messages by day.",
   "background": "#0c1117",
   "description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by day.",
   "config": {
@@ -79,7 +82,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
   },
-  "mark": {"type": "line"},
+  "mark": {"type": "line", "tooltip": true},
   "encoding": {
     "x": {
       "field": "day", 
@@ -107,7 +110,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 280,
   "height": 300,
-  "title": "Figure 3. Plot of Whatsapp messages by month.",
+  "title": "Figure 2. Plot of Whatsapp messages by month.",
   "background": "#0c1117",
   "description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by month.",
   "config": {
@@ -139,7 +142,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
   },
-  "mark": {"type": "line"},
+  "mark": {"type": "line", "tooltip": true},
   "encoding": {
     "x": {
       "field": "month", 
@@ -165,7 +168,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 280,
   "height": 300,
-  "title": "Figure 1. Plot of Whatsapp messages by year.",
+  "title": "Figure 3. Plot of Whatsapp messages by year.",
   "background": "#0c1117",
   "description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by year.",
   "config": {
@@ -197,7 +200,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
   },
-  "mark": {"type": "line"},
+  "mark": {"type": "line", "tooltip": true},
   "encoding": {
     "x": {
       "field": "year", 
@@ -262,7 +265,7 @@
   "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/367cd628b19d537b000197758b0526223bef9957/applications/predator_prey_data.csv"
 },
 "layer": [{
-  "mark": {"type": "errorbar"},
+  "mark": {"type": "errorbar", "tooltip": true},
   "encoding": {
     "x": {"field": "Category", "type": "nominal"},
     "y": {
@@ -280,7 +283,7 @@
       }
     }
   }
-},{"mark": {"type": "point"},
+},{"mark": {"type": "point", "tooltip": true},
   "encoding": {
     "x": {"field": "Category", "type": "nominal"},
     "y": {
@@ -294,7 +297,8 @@
       "scale": {"range": ["#16dbe3", "#e197f3", "#6467ef"]},
       "legend": {
         "labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]"
-      }
+      },
+    "tooltip": {"field": "RT", "type": "quantitative"}
     }
   }
 }]
