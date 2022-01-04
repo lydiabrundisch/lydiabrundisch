@@ -160,7 +160,7 @@ h2::before {
 #vis2 {
 	position: relative;
 	left: 26%;
-	z-index: 7;
+	z-index: 5;
 	filter: drop-shadow(5px 5px 5px black);
 }
 
