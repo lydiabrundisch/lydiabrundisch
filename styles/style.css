@@ -148,13 +148,30 @@ h2::before {
 	border-top-right-radius: 0;
 }
 
-#posttags {
+.posttags {
 	margin-top: 25px;
-	color: #777D80;
+	font-size: 12px;
+	filter:opacity(.5);
 }
 
-#posttags:hover {
-	filter: drop-shadow(3px 3px 5px black);
+.linksymbol {
+	position: relative;
+	display: flex;
+	right: 892px;
+	bottom: 43px;
+	margin: 0px;
+	padding: 0px;
+	filter: invert() opacity(.3);
+	width: 30px;
+  
+}
+
+.linksymbol:hover {
+	filter: invert() opacity(.8);
+}
+
+.posttags:hover {
+	filter: opacity(1) drop-shadow(3px 3px 2px black);
 }
 
 #vis2 {
@@ -200,4 +217,10 @@ h2::before {
 
 .entry_banner#whatsapp_banner {
 	background: none;
+}
+
+#license {
+	display: block;
+	margin-right: 90%;
+	width: 10%;
 }

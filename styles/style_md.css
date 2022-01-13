@@ -1,0 +1,83 @@
+html {
+  overflow-y: scroll; 
+  background: #22252b;
+}
+
+body {
+  text-align: justify;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #efefef;
+  font-family: roboto, arial, verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #3C4245;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px black;
+}
+
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #99bbff;
+  font-weight: bold;
+}
+
+a:hover {
+  filter: drop-shadow(3px 3px 5px black);
+}
+
+pre {
+	display:block;
+	padding:9.5px;
+	margin:0 0 10px;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#efefef;
+	word-break:break-all;
+	word-wrap:break-word;
+	background-color:#0c1117;
+	border-radius: 6px;
+   }
+
+   .hljs-literal {
+	color: #16dbe3;
+	}
+	.hljs-number {
+	color: #6467ef;
+	}
+	.hljs-comment {
+	color: #efefef;
+	font-style: italic;
+	}
+	.hljs-keyword {
+	color: #16dbe3 ;
+	font-weight: bold;
+	}
+	.hljs-string {
+	color: #e197f3;

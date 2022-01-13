@@ -35,14 +35,54 @@
 	</div> </div>
 </div>
 
-
 <div class="main">
+
+	<div class="p"><div class="m">
+    <a id="weather"> </a>
+  <h2>
+    Rainy and sunny days in German towns
+  </h2>
+    <a href="#weather"> <img src="../images/link-solid.svg" class="linksymbol"> </a>
+    <div class="entry_banner">
+      <img src="../images/preview_weather.png"
+        alt="Plot showing the relationship between sunny and rainy days in German towns."
+        title="Plot showing the relationship between sunny and rainy days in German towns."
+        width=100%
+      >
+    </div>
+    Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny days for all German towns. The results are very interesting: First, you might want to move to Baabe or Juliusruh by the Baltic Sea, and second, there seems to be no correlation between the two! But number of rainy days is so weirdly distributed across towns that I doubt the validity of the data. 
+    See the full <a href="../project_files/weather_protocol.html", class="entrylink">R Markdown protocol</a>. I am going to post updates as I continue to work on this project.
+    <div class="posttags"> date: 08-01-2022, tags: weather, R </div>  
+  </div> </div>
+
+<br>
+
+<div class="p"><div class="m">
+  <a id="haldanes_principle"> </a>
+<h2>
+  Haldane's principle and the relationship between social welfare spending and population
+</h2>
+  <a href="#haldanes_principle"> <img src="../images/link-solid.svg" class="linksymbol"> </a>
+  <div class="entry_banner">
+		<img src="../images/haldanes_principle.png"
+			alt="Plot showing social welfare spending as percentage of the GDP of European countries against their population."
+			title="Plot showing social welfare spending as percentage of the GDP of European countries against their population."
+			width=100%
+		>
+	</div>
+  Today, I read the essay "On Being the Right Size" by Haldane in which some relationships between an animal's size and its anatomical and physiological features are considered. In the last paragraphs, Haldane suggests corresponding relationships between a state's size and its organizational structure, stating that socialism works optimally in small states. Vaguely inspired by this, I set out to analyze the relationship between European states' size and social welfare spending as percentage of their GDP. My operationalization of this hypothesis is highly questionable. If you trust the results (which you shouldn't), they represent weak evidence against Haldane's principle as he applied it tentatively to the field of politics.
+  See the full <a href="../project_files/haldane_principle_protocol.html" class="entrylink">R Markdown protocol</a>. I am going to post updates as I continue to work on this project.
+  <div class="posttags"> date: 05-01-2022, tags: biology, politology, R </div>  
+</div> </div>
+
+<br>
+
   <div class="p"> <div class="m">
     <a id="whatsapp_exploration"> </a>
   <h2>
     More data viz in JavaScript - Whatsapp edition
   </h2>
-
+  <a href="#whatsapp_exploration"> <img src="../images/link-solid.svg" class="linksymbol"> </a>
   <div id="whatsapp_banner" class="entry_banner">
   <div id="vis2"></div>
   <script>
@@ -80,7 +120,7 @@
     "line": {"strokeWidth": 0.5}
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
+    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/project_files/whatsapp_data.csv"
   },
   "mark": {"type": "line", "tooltip": true},
   "encoding": {
@@ -140,7 +180,7 @@
     "line": {"strokeWidth": 0.5}
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
+    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/project_files/whatsapp_data.csv"
   },
   "mark": {"type": "line", "tooltip": true},
   "encoding": {
@@ -198,7 +238,7 @@
     "line": {"strokeWidth": 0.5}
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/applications/whatsapp_data_online.csv"
+    "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/project_files/whatsapp_data_online.csv"
   },
   "mark": {"type": "line", "tooltip": true},
   "encoding": {
@@ -227,7 +267,7 @@
   </script>
   </div>
   I spent another evening working on my skill to design plots in JavaScript with the Vega-Lite library. This time, I used a subset of the temporal data of one of my chat logs. Although the visualisations don't communicate information efficiently and wouldn't fit most journal's guidelines, I am surprised by how much I enjoy them aesthetically. I am going to post the write-up of some of my surface level analysis on here soon.
-  <div id="posttags"><a href="#whatsapp_exploration"> &#128279; </a> date: 04-01-2022, tags: vega-lite, data visualization, coding, whatsapp</div>
+  <div class="posttags"> date: 04-01-2022, tags: vega-lite, data visualization, coding, whatsapp </div>
 
 </div> </div>
 
@@ -238,7 +278,7 @@
   <h2>
     Data viz in JavaScript
   </h2>
-
+  <a href="#vega_lite"> <img src="../images/link-solid.svg" class="linksymbol"> </a>
   <div class="entry_banner">
   <div id="vis"></div>
   <script>
@@ -262,7 +302,7 @@
   "view": {"stroke": null}
 },
 "data": {
-  "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/367cd628b19d537b000197758b0526223bef9957/applications/predator_prey_data.csv"
+  "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/367cd628b19d537b000197758b0526223bef9957/project_files/predator_prey_data.csv"
 },
 "layer": [{
   "mark": {"type": "errorbar", "tooltip": true},
@@ -307,7 +347,7 @@
   </script>
   </div>
     I spent this evening messing around with the <a href="https://vega.github.io/vega-lite/" class="entrylink"> Vega-Lite library</a> for JavaScript to display simple graphs. As this is my first encounter with JavaScript, it took quite a bit of time to create the dot plot with standard error bars above, but I think I have figured out the basics for my use case now. I used a tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this exercise. I am going to provide a full write-up of the experiment, the code, data and metadata in January.
-    <div id="posttags"><a href="#vega_lite"> &#128279; </a> date: 30-12-2021, tags: vega-lite, data visualization, coding</div>
+    <div class="posttags"> date: 30-12-2021, tags: vega-lite, data visualization, coding </div>
 
 </div> </div>
 
@@ -318,27 +358,16 @@
 		<h2>
 			Advent of Code 2021 
 		</h2>
-
+    <a href="#advent_of_code_2021"> <img src="../images/link-solid.svg" class="linksymbol"> </a>
 		<div class="entry_banner">
-		<img src="../images/screenshot advent of code 2021.png"
-			alt="Lydia Brundisch (b. 1998). Solution to day 1, task 1 of advent of code 2021, 2021. R code."
-			title="Lydia Brundisch (b. 1998). Solution to day 1, task 1 of advent of code 2021, 2021. R code."
+		<img src="../images/advent_of_code_2021.png"
+			alt="Solution to day 1, task 1 of advent of code 2021 as R code."
+			title="Solution to day 1, task 1 of advent of code 2021 as R code."
 			width=100%
 		>
 		</div>
 			Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by Eric Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub written in R, so I wanted to share my work so far. You can find my code for the first ten puzzles as of today on <a href="https://github.com/lydiabrundisch/adventofcode" class="entrylink"> my GitHub repository</a>. To read the full tasks and get sample data to test my code, check the <a href="https://adventofcode.com/2021" class="entrylink"> website of the project</a>.
-			<div id="posttags"><a href="#advent_of_code_2021"> &#128279; </a> date: 24-12-2021, tags: R, coding</div>
-	</div> </div>
-
-	<br>
-
-	<div class="p"><div class="m">
-			<a id="placeholder"> </a>
-		<h2>
-			Placeholder
-		</h2>
-			Lorem impsum
-      <div id="posttags"><a href="#placeholder"> &#128279; </a> date: 00-00-0000, tags: none</div>
+			<div class="posttags"> date: 24-12-2021, tags: R, coding </div>
 	</div> </div>
 
 </div>
