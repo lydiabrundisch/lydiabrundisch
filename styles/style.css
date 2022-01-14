@@ -55,17 +55,13 @@ a:hover {
 }
 
 .p {
-	padding: 1px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px black;
 	background-image: linear-gradient(#3C4245, #2E3236);
-}
-
-.m {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 60px;
-	margin-right: 60px;
 }
 
 .brain {
@@ -113,8 +109,8 @@ a.entrylink {
 h2::before { 
   display: block; 
   content: " "; 
-  margin-top: -105px; 
-  height: 95px; 
+  height: 100px; 
+  margin-top: -130px;
   visibility: hidden; 
 }
 
