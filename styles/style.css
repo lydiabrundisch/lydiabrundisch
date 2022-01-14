@@ -71,6 +71,8 @@ a:hover {
 .brain {
 	filter: drop-shadow(5px 5px 5px black);
 	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
 }
 
 .profile {
@@ -127,19 +129,19 @@ h2::before {
 }
 
 #home {
-    left: 4.2%;
+    left: 4.3%;
 }
 
 #blog {
-    left: 13.1%;
+    left: 12.9%;
 }
 
 #portfolio {
-    left: 23%;
+    left: 22.5%;
 }
 
 #about {
-    left: 33.5%;
+    left: 32.7%;
 }
 
 #header {
