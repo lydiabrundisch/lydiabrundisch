@@ -42,7 +42,6 @@ h4 {
 
 img {
 	border-radius: 6px;
-	float: right;
 }
 
 a {
@@ -72,11 +71,13 @@ a:hover {
 	margin: 16px;
 	margin-left: 0px;
 	filter: drop-shadow(5px 5px 5px black);
+	float: right;
 }
 
 .profile {
 	margin: 2%;
 	filter: drop-shadow(5px 5px 5px black);
+	float: right;
 }
 
 .entry_banner {
@@ -112,7 +113,7 @@ a.entrylink {
 h2::before { 
   display: block; 
   content: " "; 
-  margin-top: -135px; 
+  margin-top: -125px; 
   height: 135px; 
   visibility: hidden; 
 }
@@ -163,7 +164,7 @@ h2::before {
 	padding: 0px;
 	filter: invert() opacity(.3);
 	width: 30px;
-  
+	float: right;
 }
 
 .linksymbol:hover {
