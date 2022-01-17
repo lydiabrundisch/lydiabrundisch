@@ -193,33 +193,28 @@ h2::before {
 	position: relative;
 	left: 2%;
 	z-index: 6;
-	filter: brightness(50%);
-	filter: drop-shadow(5px 5px 5px black);
+	filter: drop-shadow(5px 5px 50px black);
 }
 
 #vis4 {
 	position: relative;
 	left: -22%;
 	z-index: 5;
-	filter: brightness(20%);
 	filter: drop-shadow(5px 5px 5px black);
 }
 
 #vis2:hover {
 	z-index:55555 !important;
-	filter: brightness(100%);
 	filter: drop-shadow(5px 5px 15px black);
 }
 
 #vis3:hover {
 	z-index:55555 !important;
-	filter: brightness(100%);
 	filter: drop-shadow(5px 5px 15px black);
 }
 
 #vis4:hover {
 	z-index:55555 !important;
-	filter: brightness(100%);
 	filter: drop-shadow(5px 5px 15px black);
 }
 
