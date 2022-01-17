@@ -36,7 +36,7 @@ h4 {
 	font-weight: 600;
 	text-decoration: none;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	line-height: 0;
 }
 
@@ -68,7 +68,7 @@ a:hover {
 	filter: drop-shadow(5px 5px 5px black);
 	float: right;
 	margin-right: 15px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .profile {
@@ -114,16 +114,6 @@ h2::before {
   visibility: hidden; 
 }
 
-.button {
-	border-radius: 4px;
-	background-color: #99bbff;
-	display:block;
-	height: 3px;
-	width: 80px;
-	position: absolute;
-    top: 0px;
-}
-
 #home {
     left: 4.3%;
 }
@@ -143,6 +133,8 @@ h2::before {
 #header {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .posttags {
@@ -163,8 +155,27 @@ h2::before {
 	float: right;
 }
 
+.linksymbol::selection {
+	background-color: #664400;
+}
+
 .linksymbol:hover {
 	filter: invert() opacity(.8);
+}
+
+.navsymbol {
+	filter: invert() opacity(.3);
+	width: 30px;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+.navsymbol:hover {
+	filter: invert() opacity(.8);
+}
+
+.navsymbol::selection {
+	background-color: #664400;
 }
 
 .posttags:hover {
