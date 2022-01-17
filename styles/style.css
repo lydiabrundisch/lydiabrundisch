@@ -1,3 +1,5 @@
+/* General */
+
 html {
   	overflow-y: scroll; 
 	background: #22252b;
@@ -14,7 +16,6 @@ body {
 	font-weight: 500;
 	line-height: 1.7;
 }
-
 
 h1 {
 	font-size: 32px;
@@ -54,6 +55,12 @@ a:hover {
 	filter: drop-shadow(3px 3px 5px black);
 }
 
+a.entrylink {
+	text-decoration: none;
+	color: #99bbff;
+	font-weight: bold;
+}
+
 .p {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -62,37 +69,6 @@ a:hover {
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px black;
 	background-image: linear-gradient(#3C4245, #2E3236);
-}
-
-.brain {
-	filter: drop-shadow(5px 5px 5px black);
-	float: right;
-	margin-right: 15px;
-	margin-top: 15px;
-}
-
-.profile {
-	margin: 2%;
-	filter: drop-shadow(5px 5px 5px black);
-	float: right;
-}
-
-.entry_banner {
-	margin-bottom: 3%;
-	background: #0c1117;
-	border-radius: 6px;
-	display: flex;
-	justify-content: center;
-}
-
-#vis {
-	padding: 20px;
-}
-
-a.entrylink {
-	text-decoration: none;
-	color: #99bbff;
-	font-weight: bold;
 }
 
 .navbar {
@@ -114,53 +90,11 @@ h2::before {
   visibility: hidden; 
 }
 
-#home {
-    left: 4.3%;
-}
-
-#blog {
-    left: 12.9%;
-}
-
-#portfolio {
-    left: 22.5%;
-}
-
-#about {
-    left: 32.7%;
-}
-
 #header {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	padding-top: 1%;
 	padding-bottom: 1%;
-}
-
-.posttags {
-	margin-top: 15px;
-	font-size: 12px;
-	filter:opacity(.5);
-}
-
-.linksymbol {
-	position: absolute;
-	display: flex;
-	bottom: 35px;
-	right: 15px;
-	margin: 0px;
-	padding: 0px;
-	filter: invert() opacity(.3);
-	width: 25px;
-	float: right;
-}
-
-.linksymbol::selection {
-	background-color: #664400;
-}
-
-.linksymbol:hover {
-	filter: invert() opacity(.8);
 }
 
 .navsymbol {
@@ -178,8 +112,35 @@ h2::before {
 	background-color: #664400;
 }
 
+/* Home page only */
+
+.brain {
+	filter: drop-shadow(5px 5px 5px black);
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+.profile {
+	margin: 2%;
+	filter: drop-shadow(5px 5px 5px black);
+	float: right;
+}
+
+/* Blog page only */
+
+.posttags {
+	margin-top: 15px;
+	font-size: 12px;
+	filter:opacity(.5);
+}
+
 .posttags:hover {
 	filter: opacity(.7) drop-shadow(3px 3px 2px black);
+}
+
+#vis {
+	padding: 20px;
 }
 
 #vis2 {
@@ -218,16 +179,39 @@ h2::before {
 	filter: drop-shadow(5px 5px 15px black);
 }
 
+.entry_banner {
+	margin-bottom: 3%;
+	background: #0c1117;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+}
+
 .entry_banner#whatsapp_banner {
 	background: none;
 }
 
-#license {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20%;
+.linksymbol {
+	position: absolute;
+	display: flex;
+	bottom: 35px;
+	right: 15px;
+	margin: 0px;
+	padding: 0px;
+	filter: invert() opacity(.3);
+	width: 25px;
+	float: right;
 }
+
+.linksymbol::selection {
+	background-color: #664400;
+}
+
+.linksymbol:hover {
+	filter: invert() opacity(.8);
+}
+
+/* Portfolio page only */
 
 .container-portfolio {
 	display: flex;
@@ -241,4 +225,13 @@ h2::before {
 
 .container-portfolio > img:hover {
 	filter: brightness(.7);
+}
+
+/* About page only */
+
+#license {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
 }
