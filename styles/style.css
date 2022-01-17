@@ -65,11 +65,23 @@ a.entrylink {
 .p {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 60px;
-	padding-right: 60px;
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px black;
 	background-image: linear-gradient(#3C4245, #2E3236);
+}
+
+@media (min-width: 700px) {
+	.p {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+@media (max-width: 700px) {
+	.p {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .navbar {
@@ -114,7 +126,19 @@ h2::before {
 	background-color: #664400;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 500px) {
+	#name, .brain {
+		visibility: hidden;
+	}
+	.navsymbol {
+		margin-left: 12%;
+	}
+	#exception {
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
 	#name, .brain {
 		visibility: hidden;
 	}
@@ -167,37 +191,43 @@ h2::before {
 
 /* Blog page only */
 
-.posttags {
-	margin-top: 15px;
-	font-size: 12px;
-	filter:opacity(.5);
+.entry_banner {
+	margin-bottom: 3%;
+	background: #0c1117;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.posttags:hover {
-	filter: opacity(.7) drop-shadow(3px 3px 2px black);
+#whatsapp_banner {
+	background: none;
 }
 
 #vis {
 	padding: 20px;
 }
 
+@media (max-width: 600px) {
+	.entry_banner {
+		background: transparent;
+	}
+}
+
 #vis2 {
 	position: relative;
-	left: 26%;
-	z-index: 5;
+	z-index: 6;
 	filter: drop-shadow(5px 5px 5px black);
 }
 
 #vis3 {
 	position: relative;
-	left: 2%;
-	z-index: 6;
+	z-index: 2;
 	filter: drop-shadow(5px 5px 50px black);
 }
 
 #vis4 {
 	position: relative;
-	left: -22%;
 	z-index: 5;
 	filter: drop-shadow(5px 5px 5px black);
 }
@@ -217,16 +247,20 @@ h2::before {
 	filter: drop-shadow(5px 5px 15px black);
 }
 
-.entry_banner {
-	margin-bottom: 3%;
-	background: #0c1117;
-	border-radius: 6px;
-	display: flex;
-	justify-content: center;
-}
-
-.entry_banner#whatsapp_banner {
-	background: none;
+@media (min-width: 1000px) {
+	#vis2 {
+		left: 26%;
+	}
+	#vis3 {
+		left: 2%;
+	}
+	#vis4 {
+		left: -22%;
+		bottom: 372px;
+	}
+	#whatsapp_banner {
+		margin-bottom: -372px;
+	}
 }
 
 .linksymbol {
@@ -243,6 +277,22 @@ h2::before {
 
 .linksymbol::selection {
 	background-color: #664400;
+}
+
+@media (max-width: 700px) {
+	.linksymbol {
+		visibility: hidden;
+	}
+}
+
+.posttags {
+	margin-top: 15px;
+	font-size: 12px;
+	filter:opacity(.5);
+}
+
+.posttags:hover {
+	filter: opacity(.7) drop-shadow(3px 3px 2px black);
 }
 
 .linksymbol:hover {
