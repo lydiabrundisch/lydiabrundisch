@@ -231,10 +231,11 @@ h2::before {
 
 .container-portfolio {
 	display: flex;
+	flex-wrap: wrap;
 }
   
 .container-portfolio > img {
-	width: 100%;
+	width: 31%;
 	margin: 10px;
 }
 
