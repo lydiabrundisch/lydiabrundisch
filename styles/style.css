@@ -228,17 +228,32 @@ h2::before {
 
 @media (min-width: 1000px) {
 	#vis2 {
-		left: 26%;
+		left: 0%;
+		top: 30px;
 	}
 	#vis3 {
-		left: 2%;
+		left: -17%;
+		top: -374px;
 	}
 	#vis4 {
-		left: -22%;
-		bottom: 372px;
+		left: 17%;
+		bottom: 747px;
 	}
 	#whatsapp_banner {
-		margin-bottom: -372px;
+		margin-bottom: -690px;
+	}
+}
+
+@media (max-width: 700px) {
+	#vis2, #vis3, #vis4 {
+		width: fit-content;
+		margin-left: 10%;
+	}
+	#vis {
+		width: fit-content;
+	}
+	summary {
+		visibility: hidden;
 	}
 }
 
