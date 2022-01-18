@@ -217,13 +217,13 @@ h2::before {
 #vis2 {
 	position: relative;
 	z-index: 6;
-	filter: drop-shadow(5px 5px 5px black);
+	filter: drop-shadow(5px 5px 50px black);
 }
 
 #vis3 {
 	position: relative;
-	z-index: 2;
-	filter: drop-shadow(5px 5px 50px black);
+	z-index: 5;
+	filter: drop-shadow(5px 5px 5px black);
 }
 
 #vis4 {
