@@ -1,4 +1,4 @@
-/* General */
+/* general */
 
 html {
   	overflow-y: scroll; 
@@ -42,10 +42,6 @@ h4 {
 	line-height: 0;
 }
 
-img {
-	border-radius: 6px;
-}
-
 a {
 	text-decoration: none;
 	color: #efefef;
@@ -53,7 +49,7 @@ a {
 }
 
 a:hover {
-	filter: drop-shadow(3px 3px 5px black);
+	filter: drop-shadow(0 0 5px black);
 }
 
 a.entrylink {
@@ -65,8 +61,7 @@ a.entrylink {
 .p {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-radius: 6px;
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 0 0 20px black;
 	background-image: linear-gradient(#3C4245, #2E3236);
 }
 
@@ -96,6 +91,8 @@ a.entrylink {
 	margin-top: 100px
 }
 
+/* look, I don't understand header alignment
+
 h2::before { 
   display: block; 
   content: " "; 
@@ -103,6 +100,8 @@ h2::before {
   margin-top: -130px;
   visibility: hidden; 
 }
+
+*/
 
 #header {
 	border-top-left-radius: 0;
@@ -153,115 +152,28 @@ h2::before {
 	}
 }
 
-/* Home page only */
-
 .brain {
-	filter: drop-shadow(5px 5px 5px black);
+	filter: drop-shadow(0 0 5px black);
 	float: right;
 	margin-right: 15px;
 	margin-top: 15px;
 }
 
+/* home */
+
 .profile {
 	margin: 2%;
-	filter: drop-shadow(5px 5px 5px black);
+	filter: drop-shadow(0 0 5px black);
 	float: right;
 }
 
-/* Blog page only */
-
-.entry_banner {
-	margin-bottom: 3%;
-	background: #0c1117;
-	border-radius: 6px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-#whatsapp_banner {
-	background: none;
-}
-
-#vis {
-	padding: 20px;
-}
-
-@media (max-width: 600px) {
-	.entry_banner {
-		background: transparent;
-	}
-}
-
-#vis2 {
-	position: relative;
-	z-index: 6;
-	filter: drop-shadow(5px 5px 50px black);
-}
-
-#vis3 {
-	position: relative;
-	z-index: 5;
-	filter: drop-shadow(5px 5px 5px black);
-}
-
-#vis4 {
-	position: relative;
-	z-index: 5;
-	filter: drop-shadow(5px 5px 5px black);
-}
-
-#vis2:hover {
-	z-index:55555 !important;
-	filter: drop-shadow(5px 5px 15px black);
-}
-
-#vis3:hover {
-	z-index:55555 !important;
-	filter: drop-shadow(5px 5px 15px black);
-}
-
-#vis4:hover {
-	z-index:55555 !important;
-	filter: drop-shadow(5px 5px 15px black);
-}
-
-@media (min-width: 1000px) {
-	#vis2 {
-		left: 0%;
-		top: 30px;
-	}
-	#vis3 {
-		left: -17%;
-		top: -374px;
-	}
-	#vis4 {
-		left: 17%;
-		bottom: 747px;
-	}
-	#whatsapp_banner {
-		margin-bottom: -690px;
-	}
-}
-
-@media (max-width: 700px) {
-	#vis2, #vis3, #vis4 {
-		width: fit-content;
-		margin-left: 10%;
-	}
-	#vis {
-		width: fit-content;
-	}
-	summary {
-		display: none;
-	}
-}
+/* blog */
 
 .linksymbol {
 	position: absolute;
 	display: flex;
 	bottom: 35px;
-	right: 15px;
+	right: 30px;
 	margin: 0px;
 	padding: 0px;
 	filter: invert() opacity(.3);
@@ -271,6 +183,10 @@ h2::before {
 
 .linksymbol::selection {
 	background-color: #664400;
+}
+
+.linksymbol:hover {
+	filter: invert() opacity(.8);
 }
 
 @media (max-width: 700px) {
@@ -286,18 +202,163 @@ h2::before {
 }
 
 .posttags:hover {
-	filter: opacity(.7) drop-shadow(3px 3px 2px black);
+	filter: opacity(.7) drop-shadow(0 0 2px black);
 }
 
-.linksymbol:hover {
-	filter: invert() opacity(.8);
+.entry-container {
+	background-color: transparent;
+	width: 800px;
+	perspective: 1000px;
+}
+  
+.entry {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+  
+.entry-container:hover .entry {
+	transform: rotateY(180deg);
+}
+  
+.front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-shadow: 0 0 20px black;
+  }
+  
+.front {
+	background-image: transparent;
+	position: relative;
+	text-align: center;
+	color: white;
 }
 
-/* Portfolio page only */
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(0deg, #5053db88 30%, #ff3ec544 100%);
+}
+
+.title {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	background-color: black;
+	padding-bottom: 1%;
+	padding-top: 3%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+  
+.back {
+	background-image: linear-gradient(#3C4245, #2E3236);
+	transform: rotateY(180deg);
+}
+
+.text {
+	padding: 10%;
+}
+
+@media (max-width: 900px) {
+	.posttags {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	h3 {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	#overflow {
+		display: none;
+	}
+}
+
+@media (min-width: 650px) {
+	#continue, #dots {
+		display: none;
+	}
+}
+
+details {
+	display: none;
+}
+
+.container-vis {
+	display: flex;
+	flex-wrap: wrap;
+	background: #0c1117;
+}
+
+#vis, #vis2, #vis3, #vis4 {
+	position: relative;
+	width: fit-content;
+}
+
+@media (min-width: 800px) {
+	#vis4 {
+		margin-top: -20%;
+	}
+}
+
+.entry-container h4 {
+	margin-top: 10px;
+}
+
+/* figure out how to fit that automatically for every post*/
+/* this is fit for the advent_of_code_2021 image*/
+
+#weather, #haldanes_principle, #advent_of_code_2021, #whatsapp_exploration, #vega_lite {
+	display: block;
+	width: 100%;
+}
+
+.back#weather {
+	margin-top: -71.4%;
+}
+
+.back#haldanes_principle {
+	margin-top: -64.8%;
+}
+
+@media (min-width: 800px) {
+	.back#whatsapp_exploration {
+		margin-top: -55.25%;
+	}
+}
+
+@media (max-width: 800px) {
+	.back#whatsapp_exploration {
+		margin-top: -661px;
+	}
+}
+
+.back#vega_lite {
+	margin-top: -373.3px;
+}
+
+.back#advent_of_code_2021 {
+	margin-top: -68.5%;
+}
+
+/* portfolio */
 
 .container-portfolio {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative
 }
   
 .container-portfolio > img {
@@ -305,7 +366,7 @@ h2::before {
 }
 
 .container-portfolio > img:hover {
-	filter: brightness(.7);
+	filter: brightness(0.7);
 }
 
 @media (max-width: 700px) {
@@ -320,7 +381,7 @@ h2::before {
 	}
 }
 
-/* About page only */
+/* about */
 
 #license {
 	display: block;
