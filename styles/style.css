@@ -13,7 +13,7 @@ body {
 	margin-right: auto;
 	color: #efefef;
 	font-family: 'Poppins', 'Roboto', arial, verdana, sans-serif;
-	font-size: 18px;
+	font-size: calc(14px + 0.4vw);
 	font-weight: 300;
 	line-height: 1.7;
 }
@@ -35,7 +35,7 @@ h2, h3 {
 }
 
 h3 {
-	margin-top: -20px;
+	margin-top: -50px;
 }
 
 h4 {
@@ -48,7 +48,7 @@ h4 {
 }
 
 h5 {
-	font-size: 24px;
+	font-size: calc(16px + 0.8vw);
 	font-weight: 500;
 	line-height: 0;
 	margin-top: 18px;
@@ -73,7 +73,6 @@ a.entrylink {
 .p {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	box-shadow: 0 0 20px black;
 	background: #202020;
 	border-style: solid;
 	border-width: 2px;
@@ -167,7 +166,6 @@ h2::before {
 }
 
 .brain {
-	filter: drop-shadow(0 0 5px black);
 	float: right;
 	margin-right: 15px;
 	margin-top: 15px;
@@ -177,7 +175,6 @@ h2::before {
 
 .profile {
 	margin: 2%;
-	filter: drop-shadow(0 0 5px black);
 	float: right;
 }
 
@@ -186,7 +183,7 @@ h2::before {
 .linksymbol {
 	position: absolute;
 	display: flex;
-	top: 3px;
+	top: -20px;
 	right: 30px;
 	margin: 0px;
 	padding: 0px;
@@ -237,11 +234,8 @@ h2::before {
 }
   
 .front, .back {
-	position: absolute;
-	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-	box-shadow: 0 0 20px black;
 	border-style: solid;
 	border-width: 2px;
   }
@@ -277,6 +271,7 @@ h2::before {
 }
   
 .back {
+	position: absolute;
 	background: #202020;
 	transform: rotateY(180deg);
 }
@@ -322,11 +317,12 @@ details {
 #vis, #vis2, #vis3, #vis4 {
 	position: relative;
 	width: fit-content;
+	padding: 20px;
 }
 
-@media (min-width: 800px) {
-	#vis4 {
-		margin-top: -20%;
+@media (min-width: 1000px) {
+	#vis2 {
+		top: -260px;
 	}
 }
 
@@ -352,18 +348,18 @@ details {
 
 @media (min-width: 800px) {
 	.back#whatsapp_exploration {
-		margin-top: -55.25%;
+		margin-top: -66%;
 	}
 }
 
 @media (max-width: 800px) {
 	.back#whatsapp_exploration {
-		margin-top: -658px;
+		margin-top: -788px;
 	}
 }
 
 .back#vega_lite {
-	margin-top: -373.3px;
+	margin-top: -415px;
 }
 
 .back#advent_of_code_2021 {
