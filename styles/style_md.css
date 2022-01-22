@@ -1,44 +1,60 @@
 html {
   overflow-y: scroll; 
-  background: #22252b;
+  background: #202020;
 }
 
 body {
-  text-align: justify;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #efefef;
-  font-family: roboto, arial, verdana, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  background-color: #3C4245;
-  border-radius: 6px;
-  box-shadow: 3px 3px 5px black;
+	text-align: justify;
+	width: 800px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #efefef;
+	font-family: arial, verdana, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.7;
 }
-
 
 h1 {
-  font-size: 28px;
-  font-weight: 600;
+	font-size: 32px;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1;
   text-align: center;
 }
 
-h2 {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
+h2, h3 {
+	font-size: 24px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 1.7;
+}
+
+h3 {
+	margin-top: -20px;
 }
 
 h4 {
-  font-size: 16px;
-  font-weight: 600;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 0;
   text-align: center;
 }
 
+h5 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 0;
+	margin-top: 18px;
+}
+
 img {
-  border-radius: 6px;
+  border-radius: 3px;
   width: 100%;
 }
 
@@ -49,7 +65,7 @@ a {
 }
 
 a:hover {
-  filter: drop-shadow(3px 3px 5px black);
+  filter: drop-shadow(0 0 5px black);
 }
 
 pre {
@@ -62,22 +78,27 @@ pre {
 	word-break:break-all;
 	word-wrap:break-word;
 	background-color:#0c1117;
-	border-radius: 6px;
-   }
+  border-radius: 3px;
+}
 
-   .hljs-literal {
+.hljs-literal {
 	color: #16dbe3;
-	}
-	.hljs-number {
+}
+
+.hljs-number {
 	color: #6467ef;
-	}
-	.hljs-comment {
+}
+
+.hljs-comment {
 	color: #efefef;
 	font-style: italic;
-	}
-	.hljs-keyword {
+}
+
+.hljs-keyword {
 	color: #16dbe3 ;
 	font-weight: bold;
-	}
-	.hljs-string {
+}
+
+.hljs-string {
 	color: #e197f3;
+}

@@ -24,6 +24,7 @@ h1 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 1;
+	text-align: center;
 }
 
 h2, h3 {
@@ -249,7 +250,7 @@ h2::before {
 	background-image: transparent;
 	position: relative;
 	text-align: center;
-	color: white;
+	color: #efefef;
 }
 
 .overlay {
