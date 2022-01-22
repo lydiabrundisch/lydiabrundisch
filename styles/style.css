@@ -21,8 +21,6 @@ body {
 h1 {
 	font-size: 32px;
 	font-weight: 500;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	line-height: 1;
 	text-align: center;
 }
@@ -44,14 +42,16 @@ h4 {
 	text-decoration: none;
 	margin-top: 0px;
 	margin-bottom: 20px;
-	line-height: 0;
+	line-height: 1;
+	text-align: center;
 }
 
 h5 {
 	font-size: calc(16px + 0.8vw);
 	font-weight: 500;
-	line-height: 0;
-	margin-top: 18px;
+	line-height: 0.5;
+	margin-top: 0px;
+	margin-bottom: calc(10px + 0.8vw);
 }
 
 a {
@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-	filter: drop-shadow(0 0 5px black);
+	filter: drop-shadow(0 0 2px white);
 }
 
 a.entrylink {
@@ -92,42 +92,28 @@ a.entrylink {
 	}
 }
 
+#header {
+	padding: 10px;
+}
+
 .navbar {
 	z-index: 99999;
 	position: fixed;
 	top: 0;
 	width: 800px;
 	max-width: 100%;
+	text-align: center;
 }
 
 .main {
 	margin-top: 100px
 }
 
-/* look, I don't understand header alignment
-
-h2::before { 
-  display: block; 
-  content: " "; 
-  height: 100px; 
-  margin-top: -130px;
-  visibility: hidden; 
-}
-
-*/
-
-#header {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
-
 .navsymbol {
 	filter: invert() opacity(.3);
 	width: 30px;
-	margin-top: 10px;
-	margin-bottom: -5px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .navsymbol:hover {
@@ -138,44 +124,24 @@ h2::before {
 	background-color: #664400;
 }
 
-@media (max-width: 700px) {
-	#name, .brain {
+#brain {
+	width: 35px;
+	filter: none;
+}
+
+@media (max-width: 600px) {
+	#brain {
 		display: none;
 	}
-	.navsymbol {
-		margin-left: 11%;
-	}
-}
-
-@media (min-width: 700px) and (max-width: 850px) {
-	#name, .brain {
-		display: none;
-	}
-	.navsymbol {
-		margin-left: 15%;
-	}
-}
-
-@media (min-width: 850px) {
-	#name {
-		margin-left: 45%;
-	}
-	.navsymbol {
-		margin-left: 3%;
-	}
-}
-
-.brain {
-	float: right;
-	margin-right: 15px;
-	margin-top: 15px;
 }
 
 /* home */
 
 .profile {
-	margin: 2%;
 	float: right;
+	margin-top: 3%;
+	margin-right: -3%;
+	max-width: min(300px, 50%);
 }
 
 /* blog */
@@ -213,7 +179,7 @@ h2::before {
 }
 
 .posttags:hover {
-	filter: opacity(.7) drop-shadow(0 0 2px black);
+	filter: opacity(.7) drop-shadow(0 0 2px white);
 }
 
 .entry-container {
@@ -371,26 +337,29 @@ details {
 .container-portfolio {
 	display: flex;
 	flex-wrap: wrap;
-	position: relative
+	position: relative;
+	align-items: flex-end;
 }
   
-.container-portfolio > img {
-	margin: 10px;
+.item-portfolio {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 44%
 }
 
-.container-portfolio > img:hover {
+.item-portfolio >img:hover {
 	filter: brightness(0.7);
+
 }
 
-@media (max-width: 700px) {
-	.container-portfolio > img {
-		width: 100%;
-	}
+.item-portfolio > img {
+	width: 100%;
 }
 
-@media (min-width: 700px) {
-	.container-portfolio > img {
-		width: 46%;
+@media (max-width: 800px) {
+	.item-portfolio {
+		width: 100%
 	}
 }
 
