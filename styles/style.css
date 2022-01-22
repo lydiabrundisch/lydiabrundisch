@@ -70,6 +70,10 @@ a.entrylink {
 	font-weight: bold;
 }
 
+a.entrylink:hover {
+	filter: drop-shadow(0 0 5px #707070);
+}
+
 .p {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -112,8 +116,8 @@ a.entrylink {
 .navsymbol {
 	filter: invert() opacity(.3);
 	width: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .navsymbol:hover {
@@ -139,9 +143,11 @@ a.entrylink {
 
 .profile {
 	float: right;
-	margin-top: 3%;
-	margin-right: -3%;
-	max-width: min(300px, 50%);
+	margin-top: 2%;
+	margin-bottom: 3%;
+	margin-right: -5%;
+	margin-left: 3%;
+	max-width: min(300px, 40%);
 }
 
 /* blog */
