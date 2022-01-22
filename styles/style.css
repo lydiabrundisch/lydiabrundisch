@@ -74,6 +74,8 @@ a.entrylink {
 	padding-bottom: 30px;
 	box-shadow: 0 0 20px black;
 	background: #202020;
+	border-style: solid;
+	border-width: 2px;
 }
 
 @media (min-width: 700px) {
@@ -219,7 +221,6 @@ h2::before {
 .entry-container {
 	background-color: transparent;
 	width: 800px;
-	perspective: 1000px;
 }
   
 .entry {
@@ -240,6 +241,8 @@ h2::before {
 	height: 100%;
 	backface-visibility: hidden;
 	box-shadow: 0 0 20px black;
+	border-style: solid;
+	border-width: 2px;
   }
   
 .front {
@@ -263,11 +266,13 @@ h2::before {
 	position: absolute;
 	bottom: 5%;
 	right: 5%;
-	background-color: black;
+	background-color: #30337f;
 	padding-bottom: 1%;
 	padding-top: 3%;
 	padding-left: 2%;
 	padding-right: 2%;
+	border-style: solid;
+	border-width: 1px;
 }
   
 .back {
