@@ -98,6 +98,7 @@ a.entrylink:hover {
 
 #header {
 	padding: 10px;
+	border-top: none;
 }
 
 .navbar {
@@ -147,7 +148,7 @@ a.entrylink:hover {
 	margin-bottom: 3%;
 	margin-right: -5%;
 	margin-left: 3%;
-	max-width: min(300px, 40%);
+	max-width: 35%;
 }
 
 /* blog */
