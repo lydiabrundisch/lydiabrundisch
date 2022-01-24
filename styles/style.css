@@ -11,7 +11,7 @@ body {
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	color: #dde0f0;
+	color: white;
 	font-family: 'Poppins', 'Roboto', arial, verdana, sans-serif;
 	font-size: calc(14px + 0.4vw);
 	font-weight: 300;
@@ -23,6 +23,7 @@ h1 {
 	font-weight: 500;
 	line-height: 1;
 	text-align: center;
+	color: #dde0f0;
 }
 
 h2, h3 {
@@ -30,6 +31,7 @@ h2, h3 {
 	font-weight: 400;
 	text-decoration: none;
 	line-height: 1.7;
+	color: #dde0f0;
 }
 
 h3 {
@@ -44,6 +46,7 @@ h4 {
 	margin-bottom: 20px;
 	line-height: 1;
 	text-align: center;
+	color: #dde0f0;
 }
 
 h5 {
@@ -52,6 +55,7 @@ h5 {
 	line-height: 0.5;
 	margin-top: 0px;
 	margin-bottom: calc(10px + 0.8vw);
+	color: #dde0f0;
 }
 
 a {
@@ -79,7 +83,7 @@ a.entrylink:hover {
 	background: #202020;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #9ba2e2;
+	border-color: #dde0f0;
 }
 
 @media (min-width: 700px) {
@@ -195,9 +199,19 @@ a.entrylink:hover {
 	filter: opacity(.7) drop-shadow(0 0 2px #9ba2e2);
 }
 
+.blog-container {
+	position: absolute;
+	max-width: 800px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dde0f0;
+}
+
 .entry-container {
 	background-color: transparent;
-	width: 800px;
+	width: 100%;
+	position: relative;
 }
   
 .entry {
@@ -215,9 +229,6 @@ a.entrylink:hover {
 .front, .back {
 	height: 100%;
 	backface-visibility: hidden;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #9ba2e2;
   }
   
 .front {
@@ -255,6 +266,7 @@ a.entrylink:hover {
 	position: absolute;
 	background: #202020;
 	transform: rotateY(180deg);
+	padding-bottom: 5%;
 }
 
 .text {
@@ -301,12 +313,6 @@ details {
 	padding: 20px;
 }
 
-@media (min-width: 1000px) {
-	#vis2 {
-		top: -260px;
-	}
-}
-
 .entry-container h4 {
 	margin-top: 10px;
 }
@@ -344,7 +350,7 @@ details {
 }
 
 .back#advent_of_code_2021 {
-	margin-top: -68.5%;
+	margin-top: -69%;
 }
 
 /* portfolio */
