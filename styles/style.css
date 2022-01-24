@@ -11,7 +11,7 @@ body {
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	color: #efefef;
+	color: #dde0f0;
 	font-family: 'Poppins', 'Roboto', arial, verdana, sans-serif;
 	font-size: calc(14px + 0.4vw);
 	font-weight: 300;
@@ -56,17 +56,16 @@ h5 {
 
 a {
 	text-decoration: none;
-	color: #efefef;
+	color: #9ba2e2;
 	position: relative;
 }
 
 a:hover {
-	filter: drop-shadow(0 0 2px white);
+	filter: drop-shadow(0 0 2px #9ba2e2);
 }
 
 a.entrylink {
 	text-decoration: none;
-	color: #99bbff;
 	font-weight: bold;
 }
 
@@ -79,7 +78,8 @@ a.entrylink:hover {
 	padding-bottom: 30px;
 	background: #202020;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
+	border-color: #9ba2e2;
 }
 
 @media (min-width: 700px) {
@@ -148,7 +148,13 @@ a.entrylink:hover {
 	margin-bottom: 3%;
 	margin-right: -5%;
 	margin-left: 3%;
-	max-width: 35%;
+	width: 30%;
+}
+
+@media (max-width: 600px) {
+	.profile {
+		width: 50%;
+	}
 }
 
 /* blog */
@@ -156,7 +162,7 @@ a.entrylink:hover {
 .linksymbol {
 	position: absolute;
 	display: flex;
-	top: -20px;
+	top: -22px;
 	right: 30px;
 	margin: 0px;
 	padding: 0px;
@@ -186,7 +192,7 @@ a.entrylink:hover {
 }
 
 .posttags:hover {
-	filter: opacity(.7) drop-shadow(0 0 2px white);
+	filter: opacity(.7) drop-shadow(0 0 2px #9ba2e2);
 }
 
 .entry-container {
@@ -210,14 +216,15 @@ a.entrylink:hover {
 	height: 100%;
 	backface-visibility: hidden;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
+	border-color: #9ba2e2;
   }
   
 .front {
 	background-image: transparent;
 	position: relative;
 	text-align: center;
-	color: #efefef;
+	color: white;
 }
 
 .overlay {
@@ -241,6 +248,7 @@ a.entrylink:hover {
 	padding-right: 2%;
 	border-style: solid;
 	border-width: 1px;
+	border-color: #9ba2e2;
 }
   
 .back {
@@ -358,7 +366,8 @@ details {
 .item-portfolio > img {
 	width: 100%;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
+	border-color: #9ba2e2;
 }
 
 .item-portfolio >img:hover {
