@@ -212,6 +212,12 @@ a.entrylink:hover {
 	background-color: transparent;
 	width: 100%;
 	position: relative;
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	border-width: 1px;
+	border-color: #dde0f0;
+	overflow:hidden;
 }
   
 .entry {
@@ -220,6 +226,7 @@ a.entrylink:hover {
 	height: 100%;
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
+	;
 }
   
 .entry-container:hover .entry {
@@ -266,7 +273,9 @@ a.entrylink:hover {
 	position: absolute;
 	background: #202020;
 	transform: rotateY(180deg);
-	padding-bottom: 5%;
+	padding-bottom: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .text {
