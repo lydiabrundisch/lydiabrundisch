@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
   <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -26,7 +26,7 @@
         <img src="../images/home-solid.svg" class="navsymbol" alt="Home" title="Home">
       </a>
       <a href="blog.html">
-        <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
+        <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog" id="current">
       </a>
       <a href="portfolio.html">
         <img src="../images/archive-solid.svg" class="navsymbol" alt="Portfolio" title="Portfolio">
@@ -78,10 +78,11 @@
                 <a href="../project_files/weather_protocol.html" , class="entrylink">
                   R Markdown protocol.
                 </a>
-                I am going to post updates as I continue to work on this project.
               </span>
-              <a href="../project_files/weather_protocol.html" class="entrylink" id="continue">
-                ➔
+              <a href="../post/weather.html" class="entrylink" id="continue">
+                <br>
+                <br>
+                Continue reading ➔
               </a>
               <div class="posttags">
                 date: 08-01-2022, edit: 21-01-2021, tags: weather, R
@@ -125,16 +126,15 @@
               <span id="dots">…</span><span id="overflow">
                 between a state's size and its organizational structure, stating that socialism works best in small
                 states. Inspired by this, I plotted European states' social welfare spending against their population
-                size. Within this operationalization, Haldane's principle does not seem to hold up applied to the field
-                of
-                politics. See the full
+                size. See the full
                 <a href="../project_files/haldane_principle_protocol.html" class="entrylink">
                   R Markdown protocol.
                 </a>
-                I am going to post updates as I continue to work on this project.
               </span>
-              <a href="../project_files/haldane_principle_protocol.html" class="entrylink" id="continue">
-                ➔
+              <a href="../post/haldanes_principle.html" class="entrylink" id="continue">
+                <br>
+                <br>
+                Continue reading ➔
               </a>
               <div class="posttags">
                 date: 05-01-2022, edit: 21-01-2021, tags: biology, politology, R
@@ -352,9 +352,13 @@
               I spent another evening working on my skill to design plots in JavaScript with the Vega-Lite library. This
               time, I used a subset of the temporal data of one of my chat logs. Although the visualisations don't
               communicate information efficiently and wouldn't fit most journal's guidelines, I am surprised by how much
-              I
-              enjoy them aesthetically. I am going to post the write-up of some of my surface level analysis on here
+              I enjoy them aesthetically. I am going to post the write-up of some of my surface level analysis on here
               soon.
+              <a href="../post/whatsapp_exploration.html" class="entrylink" id="continue">
+                <br>
+                <br>
+                Continue reading ➔
+              </a>
               <div class="posttags">
                 date: 04-01-2022, edit: 21-01-2022, tags: vega-lite, data visualization, coding, whatsapp
               </div>
@@ -374,7 +378,7 @@
               <script>
                 var vlSpec = {
                   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-                  "width": 280,
+                  "width": 400,
                   "height": 300,
                   "title": "Mean reaction time by trial type.",
                   "background": "#0c1117",
@@ -454,11 +458,15 @@
                 JS Vega-Lite library
               </a>
               to display simple graphs. Being new to JavaScript, even simple plots took some time to figure out. I used
-              a
-              tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this
-              exercise. I am going to provide a full write-up of the experiment, the code, data and metadata in January.
+              a tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this
+              exercise. I am going to provide a full write-up of the experiment, the code, and data soon.
+              <a href="../post/vega_lite.html" class="entrylink" id="continue">
+                <br>
+                <br>
+                Continue reading ➔
+              </a>
               <div class="posttags">
-                date: 30-12-2021, edit: 21-01-2022, tags: vega-lite, data visualization, coding
+                date: 30-12-2021, edit: 29-01-2022, tags: vega-lite, data visualization, coding
               </div>
             </div>
           </div>
@@ -503,8 +511,10 @@
                   website of the project.
                 </a>
               </span>
-              <a href="https://github.com/lydiabrundisch/adventofcode" class="entrylink" id="continue">
-                ➔
+              <a href="../post/advent_of_code_2021.html" class="entrylink" id="continue">
+                <br>
+                <br>
+                Continue reading ➔
               </a>
               <div class="posttags">
                 date: 24-12-2021, edit: 21-01-2022, tags: R, coding
@@ -513,10 +523,20 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
+  <br>
+  <div class="footer">
+    <div class="p" id="header">
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
+        class="entrylink">
+        <img src="../images/linkedin-brands.svg" class="navsymbol" alt="LinkedIn profile" title="LinkedIn profile">
+      </a>
+      <a href="https://twitter.com/lydiabrundisch" class="entrylink">
+        <img src="../images/twitter-square-brands.svg" class="navsymbol" alt="Twitter profile" title="Twitter profile">
+      </a>
+    </div>
+  </div>
   <br>
 
 </body>

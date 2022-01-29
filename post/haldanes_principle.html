@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lydia Brundisch - About</title>
+  <title>Lydia Brundisch - Haldane's principle, social welfare spending and population size</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
   <!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
 </head>
 
@@ -21,13 +24,13 @@
       <a href="../index.html">
         <img src="../images/home-solid.svg" class="navsymbol" alt="Home" title="Home">
       </a>
-      <a href="blog.html">
+      <a href="../html/blog.html#haldanes_principle"> 
         <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
       </a>
-      <a href="portfolio.html">
+      <a href="../html/portfolio.html">
         <img src="../images/archive-solid.svg" class="navsymbol" alt="Portfolio" title="Portfolio">
       </a>
-      <a href="about.html">
+      <a href="../html/about.html">
         <img src="../images/address-card-regular.svg" class="navsymbol" alt="About" title="About" id="current">
       </a>
       <a href="../index.html">
@@ -39,29 +42,26 @@
   <div class="main">
     <div class="p" id="about">
       <h1>
-        About
+        Haldane's principle, social welfare spending and population size
       </h1>
-      I study cognitive science at the University of Potsdam and work at the Max Planck Institute for Human
-			Development. I share my leisure and coursework projects in the spirit of open science and showing my
-			work as I learn. 
+      <div class="front">
+        <img id="haldanes_principle" src="../images/haldanes_principle.png">
+        <div class="overlay">
+        </div>
+      </div>
       <br>
-      <br>
-      Please contact me on <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
-        class="entrylink">LinkedIn</a> or <a href="https://twitter.com/lydiabrundisch" class="entrylink">Twitter</a>.
-      <br>
-      <br>
-      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/"><img id="license"
-          alt="Creative Commons License" style="border-width:0"
-          src="https://i.creativecommons.org/l/by-sa/3.0/de/88x31.png" /></a> All images and texts on my blog as well as
-      the logo are created by me and licensed under a <a rel="license"
-        href="http://creativecommons.org/licenses/by-sa/3.0/de/" class="entrylink">Creative Commons
-        Attribution-ShareAlike 3.0 Germany License</a>.
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img id="license"
-          alt="Creative Commons License" style="border-width:0"
-          src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a> All .svg files on this blog are created and
-      distributed by <a href="https://fontawesome.com/" class="entrylink">Fontawesome</a> licensed under a <a
-        rel="license" href="http://creativecommons.org/licenses/by/4.0/" class="entrylink">Creative Commons Attribution
-        4.0 International License</a>.
+      In the essay "On Being the Right Size", Haldane ponders animals' anatomical and physiological features as
+      function of their size. In the last paragraphs, he suggests a corresponding relation
+      between a state's size and its organizational structure, stating that socialism works best in small
+      states. Inspired by this, I plotted European states' social welfare spending against their population
+      size. Within this operationalization, Haldane's principle does not seem to hold up applied to the field
+      of politics. See the full
+      <a href="../project_files/haldane_principle_protocol.html" class="entrylink">
+        R Markdown protocol.
+      </a>
+      <div class="posttags">
+        date: 05-01-2022, edit: 21-01-2021, tags: biology, politology, R
+      </div>
     </div>
   </div>
   <br>

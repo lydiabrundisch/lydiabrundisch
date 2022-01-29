@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lydia Brundisch - Data viz in JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+  <!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
+</head>
+
+<body>
+  <div class="navbar">
+    <div id="header" class="p">
+      <a href="../index.html">
+        <img src="../images/home-solid.svg" class="navsymbol" alt="Home" title="Home">
+      </a>
+      <a href="../html/blog.html#vega_lite"> 
+        <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
+      </a>
+      <a href="../html/portfolio.html">
+        <img src="../images/archive-solid.svg" class="navsymbol" alt="Portfolio" title="Portfolio">
+      </a>
+      <a href="../html/about.html">
+        <img src="../images/address-card-regular.svg" class="navsymbol" alt="About" title="About" id="current">
+      </a>
+      <a href="../index.html">
+        <img src="../images/brains.png" class="navsymbol" id="brain" alt="Brain with headphone pixelart logo."
+          title="Brain with headphone pixelart logo.">
+      </a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="p" id="about">
+      <h1>
+        Data viz in JavaScript
+      </h1>
+      <div class="front">
+        <div class="container-vis">
+          <div id="vis"></div>
+          <script>
+            var vlSpec = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": 300,
+              "height": 300,
+              "title": "Mean reaction time by trial type.",
+              "background": "#0c1117",
+              "description": "Bar graph showing the mean RT in response to appetitive, aversive, and neutral trials trialss in the predator-prey simulation experiment.",
+              "config": {
+                "axis": {
+                  "labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]",
+                  "labelColor": "white",
+                  "domainColor": "white",
+                  "titleColor": "white",
+                  "grid": false,
+                  "labelAngle": 0
+                },
+                "title": { "color": "white", "orient": "bottom" },
+                "view": { "stroke": null }
+              },
+              "data": {
+                "url": "https://raw.githubusercontent.com/lydiabrundisch/lydiabrundisch/main/project_files/predator_prey_data.csv"
+              },
+              "layer": [{
+                "mark": { "type": "errorbar", "tooltip": true },
+                "encoding": {
+                  "x": { "field": "Category", "type": "nominal" },
+                  "y": {
+                    "aggregate": "average",
+                    "field": "RT",
+                    "type": "quantitative",
+                    "title": "Mean RT",
+                    "scale": { "zero": false }
+                  },
+                  "color": {
+                    "field": "Category",
+                    "scale": { "range": ["#16dbe3", "#e197f3", "#6467ef"] },
+                    "legend": null
+                  }
+                }
+              }, {
+                "mark": { "type": "point", "tooltip": true },
+                "encoding": {
+                  "x": { "field": "Category", "type": "nominal" },
+                  "y": {
+                    "aggregate": "average",
+                    "field": "RT",
+                    "type": "quantitative",
+                    "title": "Mean RT"
+                  },
+                  "color": {
+                    "field": "Category",
+                    "scale": { "range": ["#16dbe3", "#e197f3", "#6467ef"] },
+                    "legend": null,
+                    "tooltip": { "field": "RT", "type": "quantitative" }
+                  }
+                }
+              }]
+            };
+            vegaEmbed("#vis", vlSpec);
+          </script>
+        </div>
+      </div>
+      <br>
+      I spent this evening messing around with the
+      <a href="https://vega.github.io/vega-lite/" class="entrylink">
+        JS Vega-Lite library
+      </a>
+      to display simple graphs. Being new to JavaScript, even simple plots took some time to figure out. I used a
+      tiny subset of the data from the predator-prey simulation experiment I conducted last semester for this
+      exercise. I am going to provide a full write-up of the experiment, the code, data and metadata in January.
+      <div class="posttags">
+        date: 30-12-2021, edit: 21-01-2022, tags: vega-lite, data visualization, coding
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer">
+    <div class="p" id="header">
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
+        class="entrylink">
+        <img src="../images/linkedin-brands.svg" class="navsymbol" alt="LinkedIn profile" title="LinkedIn profile">
+      </a>
+      <a href="https://twitter.com/lydiabrundisch" class="entrylink">
+        <img src="../images/twitter-square-brands.svg" class="navsymbol" alt="Twitter profile" title="Twitter profile">
+      </a>
+    </div>
+  </div>
+  <br>
+</body>
+
+</html>
