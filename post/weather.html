@@ -24,7 +24,7 @@
       <a href="../index.html">
         <img src="../images/home-solid.svg" class="navsymbol" alt="Home" title="Home">
       </a>
-      <a href="../html/blog.html#weather"> 
+      <a href="../html/blog.html#weather">
         <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
       </a>
       <a href="../html/portfolio.html">
@@ -40,33 +40,56 @@
     </div>
   </div>
   <div class="main">
-    <div class="p" id="about">
-      <h1>
-        Rainy and sunny days in German towns
-      </h1>
-      <div class="front">
-        <img id="weather" src="../images/preview_weather.png">
-        <div class="overlay">
+    <div class="blog-container">
+      <div class="entry-container" id="weather">
+        <div class="entry">
+          <div class="text">
+            <h3>
+              <hr>
+              Rainy and sunny days in German towns
+              <hr>
+            </h3>
+          </div>
+          <div class="text" style="margin-top: -25px;">
+            <img class="blog-image" src="../images/preview_weather.png">
+          </div>
+          <div class="text">
+            <hr>
+            Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny
+            days
+            for all German towns. The results are very interesting: First, you might want to move to Baabe or
+            Juliusruh
+            <span id="dots">…</span><span id="overflow">
+              by the Baltic Sea, and second, there seems to be no correlation between the two! But number of rainy
+              days
+              is so weirdly distributed across towns that I doubt the validity of the data. See the full
+              <a href="../project_files/weather_protocol.html" , class="entrylink">
+                R Markdown protocol.
+              </a>
+              <hr>
+            </span>
+            <div id="posttags">
+              <hr>
+              <span id="datentag">
+                date: 08-01-2022, edit: 21-01-2021, tags: weather, R
+                <br>
+              </span>
+              <a href="../html/blog.html#weather" id="continue"> 
+                Go back
+              </a>
+              <hr>
+            </div>
+          </div>
         </div>
       </div>
       <br>
-      Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny days
-      for all German towns. The results are very interesting: First, you might want to move to Baabe or
-      Juliusruh by the Baltic Sea, and second, there seems to be no correlation between the two! But number of rainy
-      days is so weirdly distributed across towns that I doubt the validity of the data. See the full
-      <a href="../project_files/weather_protocol.html" , class="entrylink">
-        R Markdown protocol.
-      </a>
-      <div class="posttags">
-        date: 08-01-2022, edit: 21-01-2021, tags: weather, R
-      </div>
+      <br>
     </div>
   </div>
   <br>
   <div class="footer">
     <div class="p" id="header">
-      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
-        class="entrylink">
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="entrylink">
         <img src="../images/linkedin-brands.svg" class="navsymbol" alt="LinkedIn profile" title="LinkedIn profile">
       </a>
       <a href="https://twitter.com/lydiabrundisch" class="entrylink">

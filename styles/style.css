@@ -2,7 +2,8 @@
 
 html {
   	overflow-y: scroll; 
-	background: #202020;
+	background-color: #202020;
+	height: 100%;
 }
 
 body {
@@ -38,10 +39,7 @@ h2, h3 {
 	text-decoration: none;
 	line-height: 1.7;
 	color: #dde0f0;
-}
-
-h3 {
-	margin-top: -50px;
+	text-align: center;
 }
 
 h4 {
@@ -77,7 +75,7 @@ a:hover {
 
 a.entrylink {
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 a.entrylink:hover {
@@ -109,8 +107,6 @@ a.entrylink:hover {
 	padding: 10px;
 	border-top: none;
 	filter: opacity(.9);
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
 }
 
 .navbar {
@@ -120,6 +116,8 @@ a.entrylink:hover {
 	width: 800px;
 	max-width: 100%;
 	text-align: center;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
 
 .main {
@@ -172,9 +170,6 @@ a.entrylink:hover {
 	text-align: center;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	border-bottom-left-radius: unset;
-	border-bottom-right-radius: unset;
-	overflow: hidden;
 }
 
 /* home */
@@ -190,15 +185,9 @@ a.entrylink:hover {
 /* blog */
 
 .linksymbol {
-	position: absolute;
-	display: flex;
-	top: -22px;
-	right: 30px;
-	margin: 0px;
-	padding: 0px;
 	filter: invert() opacity(.3);
-	width: 25px;
-	float: right;
+	width: 50px;
+	margin-left: 47%;
 }
 
 .linksymbol::selection {
@@ -215,27 +204,31 @@ a.entrylink:hover {
 	}
 }
 
-.posttags {
-	margin-top: 15px;
+#posttags {
 	font-size: 12px;
+	text-align: right;
+}
+
+#datentag {
 	filter:opacity(.5);
 }
 
-.posttags:hover {
-	filter: opacity(.7) drop-shadow(0 0 2px #9ba2e2);
+#datentag:hover {
+	filter: opacity(.7);
+}
+
+#continue {
+	font-weight: bolder;
+}
+
+#datentag:hover, #continue:hover {
+	filter: drop-shadow(0 0 2px #9ba2e2);
 }
 
 .blog-container {
 	position: absolute;
 	max-width: 800px;
-	overflow: hidden;
-}
-
-.entry-container {
-	background-color: transparent;
-	width: 100%;
-	position: relative;
-	overflow:hidden;
+	background-color: #151515;
 	border-radius: 3px;
 }
   
@@ -243,71 +236,17 @@ a.entrylink:hover {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	transition: transform .8s;
-	transform-style: preserve-3d;
-}
-  
-.entry-container:hover .entry {
-	transform: rotateY(180deg);
-}
-  
-.front, .back {
-	height: 100%;
-	backface-visibility: hidden;
-  }
-  
-.front {
-	background-image: transparent;
-	position: relative;
-	text-align: center;
-	color: white;
-}
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: linear-gradient(0deg, #5053db88 30%, #ff3ec544 100%);
-}
-
-.title {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-	background-color: #30337f;
-	padding-bottom: 1%;
-	padding-top: 3%;
-	padding-left: 2%;
-	padding-right: 2%;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #9ba2e2;
-}
-  
-.back {
-	position: absolute;
-	background: #151515;
-	transform: rotateY(180deg);
-	padding-bottom: 50px;
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 .text {
-	padding: 10%;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 @media (max-width: 900px) {
-	.posttags {
-		display: none;
-	}
-}
-
-@media (max-width: 800px) {
-	h3 {
+	#datentag {
 		display: none;
 	}
 }
@@ -315,6 +254,10 @@ a.entrylink:hover {
 @media (max-width: 650px) {
 	#overflow {
 		display: none;
+	}
+	.text {
+		padding: 30px;
+		padding-top: 0;
 	}
 }
 
@@ -324,10 +267,6 @@ a.entrylink:hover {
 	}
 }
 
-#continue, .posttags {
-	text-align: right;
-}
-
 details {
 	display: none;
 }
@@ -335,53 +274,31 @@ details {
 .container-vis {
 	display: flex;
 	flex-wrap: wrap;
-	background: #0c1117;
 }
 
 #vis, #vis2, #vis3, #vis4 {
 	position: relative;
 	width: fit-content;
-	padding: 20px;
+	margin: auto;
 }
 
 .entry-container h4 {
 	margin-top: 10px;
 }
 
-/* figure out how to fit that automatically for every post*/
-/* this is fit for the advent_of_code_2021 image*/
-
-#weather, #haldanes_principle, #advent_of_code_2021, #whatsapp_exploration, #vega_lite {
+.blog-image {
 	display: block;
 	width: 100%;
 }
 
-.back#weather {
-	margin-top: -71.4%;
+img#haldanes_principle {
+	margin-top: -50px;
 }
 
-.back#haldanes_principle {
-	margin-top: -64.8%;
-}
-
-@media (min-width: 800px) {
-	.back#whatsapp_exploration {
-		margin-top: -66%;
+@media (max-width: 600px) {
+	.text > .blog-image {
+		margin-top: 30px;
 	}
-}
-
-@media (max-width: 800px) {
-	.back#whatsapp_exploration {
-		margin-top: -788px;
-	}
-}
-
-.back#vega_lite {
-	margin-top: -415px;
-}
-
-.back#advent_of_code_2021 {
-	margin-top: -69%;
 }
 
 /* portfolio */
