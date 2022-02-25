@@ -175,8 +175,8 @@ a.entrylink:hover {
 /* home */
 
 .profile {
-	width: 70%;
-	max-width: 300px;
+	width: 100%;
+	max-width: 290px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
