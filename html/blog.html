@@ -43,6 +43,13 @@
 
   <div class="main">
     <div class="blog-container">
+      <div class="p">
+        <h1>
+          Blog
+        </h1>
+        I share my leisure and coursework projects in the spirit of open science and showing my work as I learn. The
+        posts do not reflect any form of scientific insight, but random thoughts that stimulate my curiosity at the time.
+      </div>
       <div class="entry-container" id="citeless">
         <div class="entry">
           <div class="text">
@@ -57,10 +64,14 @@
           </div>
           <div class="text">
             <hr>
-            I made a bookmarklet ("citeless") to solve a problem I came across today - long lists of citations within a research
-            paper that impact its readability. Check it out on
+            I made a bookmarklet ("citeless") to solve a problem I came across today - long lists of citations within a
+            research paper that impact its readability. Check it out on
             <a href="https://github.com/lydiabrundisch/citeless" class="entrylink">
-              my GitHub repository.
+              my GitHub repository
+            </a>
+            or just drag this link to your bookmark bar:
+            <a href="javascript:t=document.getSelection();t=t.toString();t=t.replace(/((\s|\n)\(([^\)]+)\d\d\d\d\))|(\s\(([^\)]+)\n)|((\s|\n)\(([^\)]+)\n\d\d\d\d\))|((\s|\n)\(\d\d\d\d\))/g, '');navigator.clipboard.writeText(t);" class="entrylink">
+              citeless
             </a>
             <span id="dots">…</span><span id="overflow">
               <hr>
