@@ -285,6 +285,7 @@ a.entrylink:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	filter: opacity(0.8);
 }
   
 @keyframes blink {
