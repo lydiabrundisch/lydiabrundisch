@@ -174,14 +174,107 @@ a.entrylink:hover {
 
 /* home */
 
+#background {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -3;
+	background: linear-gradient(85deg, white, black /* #ff938e, #483699 */);
+    background-size: 400% 400%;
+	animation: blink 8s ease infinite; 
+	border-radius: 5px;
+}
+
+#background-top {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0;
+	height: 10px;
+	z-index: -2;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #151515;
+	padding: 0;
+}
+
+#index {
+	position: relative;
+	background: url(../images/screenshot.png);
+	background-size: 110%;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+@media (max-width: 1000px) {
+	#index {
+		background-position: bottom;
+	}
+}
+
+@media (min-width: 950px) {
+	#background-top {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	#background-top {
+		height: 80px;
+	}
+}
+
+@media (max-width: 780px) {
+	#background-top {
+		height: 120px;
+	}
+}
+
+@media (max-width: 730px) {
+	#background-top {
+		height: 200px;
+	}
+}
+
 @media (max-width: 600px) {
-	.p#index {
+	#background-top {
+		height: 80px;
+	}
+}
+
+@media (max-width: 560px) {
+	#background-top {
+		height: 120px;
+	}
+}
+
+@media (max-width: 530px) {
+	#background-top {
+		height: 160px;
+	}
+}
+
+@media (max-width: 500px) {
+	#background-top {
+		height: 190px;
+	}
+}
+
+@media (max-width: 600px) {
+	#index {
 		height: 580px; 
+		background-size: 180%;
+	}
+	.profile {
+		margin-top: 100px;
 	}
 }
 
 @media (min-width: 600px) {
-	.p#index {
+	#index {
 		height: 500px; 
 	}
 }
@@ -192,6 +285,12 @@ a.entrylink:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+  
+@keyframes blink {
+    0% { background-position: 0% 33% }
+    50% { background-position: 100% 68% }
+    100% { background-position: 0% 33% }
 }
 
 /* blog */
