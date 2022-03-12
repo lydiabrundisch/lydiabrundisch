@@ -8,7 +8,7 @@ html {
 
 body {
 	text-align: justify;
-	width: 800px;
+	width: 1200px;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -91,8 +91,8 @@ a.entrylink:hover {
 
 @media (min-width: 700px) {
 	.p {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 200px;
+		padding-right: 200px;
 	}
 }
 
@@ -113,7 +113,7 @@ a.entrylink:hover {
 	z-index: 99999;
 	position: fixed;
 	top: 0;
-	width: 800px;
+	width: 1200px;
 	max-width: 100%;
 	text-align: center;
 	border-top-left-radius: 0px;
@@ -165,7 +165,7 @@ a.entrylink:hover {
 	z-index: 99999;
 	position: fixed;
 	bottom: 0;
-	width: 800px;
+	width: 1200px;
 	max-width: 100%;
 	text-align: center;
 	border-top-left-radius: 3px;
@@ -173,6 +173,18 @@ a.entrylink:hover {
 }
 
 /* home */
+
+@media (max-width: 600px) {
+	.p#index {
+		height: 580px; 
+	}
+}
+
+@media (min-width: 600px) {
+	.p#index {
+		height: 500px; 
+	}
+}
 
 .profile {
 	width: 100%;
@@ -227,7 +239,7 @@ a.entrylink:hover {
 
 .blog-container {
 	position: absolute;
-	max-width: 800px;
+	max-width: 1200px;
 	background-color: #151515;
 	border-radius: 3px;
 }
@@ -239,8 +251,8 @@ a.entrylink:hover {
 }
 
 .text {
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 200px;
+	padding-right: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -339,17 +351,5 @@ img#haldanes_principle {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20%;
-}
-
-#about {
-	text-align: center; 
-	padding-bottom: 50px;
-}
-
-@media (min-width: 700px) {
-	#about {
-		padding-left: 150px; 
-		padding-right: 150px;
-	}
+	max-width: 20%;
 }
