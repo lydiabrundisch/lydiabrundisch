@@ -34,6 +34,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-weight: 500;
+	text-align: left;
 }
 
 h3 {
@@ -121,21 +122,9 @@ a:hover {
 }
 
 .main {
-	grid-area: 2 / 1 / 12 / 9;
+	grid-area: 2 / 1 / 13 / 9;
 	position: relative;
 	overflow: clip;
-}
-
-.footer {
-  grid-area: 12 / 1 / 13 / 9; 
-  background-color: #151515;
-}
-
-.footer-inner {
-  grid-area: 12 / 3 / 13 / 7;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -146,10 +135,7 @@ a:hover {
 		grid-area: 1 / 1 / 2 / 9;
 	}
 	.main {
-		grid-area: 2 / 1 / 12 / 9;
-	}
-	.footer {
-		grid-area: 12 / 1 / 13 / 9;
+		grid-area: 2 / 1 / 13 / 9;
 	}
 }
 
@@ -202,7 +188,7 @@ a:hover {
 }
 
 .profile-image {
-  grid-area: 3 / 5 / 11 / 7;
+  grid-area: 3 / 5 / 12 / 7;
   display: flex;
   justify-content: right;
   z-index: 100;
@@ -214,10 +200,10 @@ a:hover {
 
 @media (max-width: 1000px) {
 	.text {
-		grid-area: 3 / 2 / 11 / 5;
+		grid-area: 3 / 2 / 12 / 5;
 	}
 	.profile-image {
-  		grid-area: 3 / 2 / 11 / 8;
+  		grid-area: 3 / 2 / 12 / 8;
 		overflow: clip;
 	}
 }
@@ -225,14 +211,14 @@ a:hover {
 /* blog, portfolio */
 
 .description {
-	grid-area: 2 / 1 / 12 / 3;
+	grid-area: 2 / 1 / 13 / 3;
 	font-size: 0.7em;
 	background-color: #151515;
 	padding: 2vw;
 }
 
 .blog-container {
-	grid-area: 2 / 3 / 12 / 7;
+	grid-area: 2 / 3 / 13 / 7;
 	overflow-y: scroll;
 	background-color: #151515;
 	padding: 2vw;
@@ -248,7 +234,7 @@ a:hover {
 }
 
 .profile-card {
-	grid-area: 2 / 7 / 12 / 9;
+	grid-area: 2 / 7 / 13 / 9;
 	font-size: 0.7em;
 	background-color: #151515;
 	padding: 2vw;
@@ -265,10 +251,14 @@ a:hover {
 	.main, .blog-container {
 		grid-area: 1 / 1 / 12 / 9;
 	}
+	.blog-container {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
 	.navbar, .navbar-inner {
 		grid-area: 12 / 1 / 13 / 9;
 	}
-	.description, .profile-card, .footer-inner, #big {
+	.description, .profile-card, #big {
 			display: none;
 	}
 }
@@ -276,12 +266,12 @@ a:hover {
 /* about */
 
 .about-background {
-	grid-area: 2 / 1 / 12 / 9;
+	grid-area: 2 / 1 / 13 / 9;
 	background-color: #151515;
 }
 
 .about-text {
-	grid-area: 3 / 3 / 11 / 7;
+	grid-area: 2 / 3 / 13 / 7;
 	overflow-y: scroll;
 	padding: 2vw;
 }
@@ -289,5 +279,7 @@ a:hover {
 @media (max-width: 1000px) {
 	.about-background, .about-text {
 		grid-area: 1 / 1 / 12 / 9;
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 }

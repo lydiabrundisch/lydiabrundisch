@@ -21,7 +21,11 @@
 <body>
 
 	<div class="container">
-		<div class="navbar"></div>
+		<div class="navbar">
+			<a href="index.html" class="button" style="width: 12vw;">
+				Lydia Brundisch
+			</a>
+		</div>
 		<div class="navbar-inner">
 			<a href="../index.html" class="symbol-link">
 				<img src="../images/home-solid.svg" class="symbol" alt="Home" title="Home">
@@ -388,33 +392,50 @@
 			<h2 id="advent_of_code_2021">
 				Advent of Code 2021
 			</h2>
-			<div title="code-block" style="font-size: 0.7em; font-family: 'Courier New', Courier, monospace; padding: 5vh;">
+			<div title="code-block"
+				style="font-size: 0.7em; font-family: 'Courier New', Courier, monospace; padding: 5vh;">
 				<span style="color: #505050;"># Day 1, Puzzle 1
-				<br>
-				<br>
-				## Count the number of times a depth measurement increases from the previous measurement.
-				<br>
-				<br>
-			</span>
-				data <span style="color: #e197f3;"><-</span> read.table(<span style="color: #6467ef;">"Advent of Code 1.txt"</span>)
-				<br>
-				solutions <span style="color: #e197f3;"><-</span> rep(<span style="color: #6467ef;">0</span>, <span style="color: #6467ef;">50</span>)
-				<br>
-				counter <span style="color: #e197f3;"><-</span> <span style="color: #6467ef;">0</span>
-				<br>
-				<br>
-				<span style="color: #e197f3;">for</span> (i <span style="color: #e197f3;">in</span> (<span style="color: #6467ef;">1</span> <span style="color: #e197f3;">:</span> (length(data<span style="color: #e197f3;">$</span>V1) <span style="color: #e197f3;">-</span> <span style="color: #6467ef;">1</span>))) {
 					<br>
-				&nbsp; <span style="color: #e197f3;">if</span> (data<span style="color: #e197f3;">$</span>V1[i] <span style="color: #e197f3;"><</span> data<span style="color: #e197f3;">$</span>V1[i <span style="color: #e197f3;">+</span> <span style="color: #6467ef;">1</span>]) {
 					<br>
-					&nbsp; &nbsp; counter <span style="color: #e197f3;"><-</span> counter <span style="color: #e197f3;">+</span> <span style="color: #6467ef;">1</span>
+					## Count the number of times a depth measurement increases from the previous measurement.
 					<br>
-					&nbsp; }
-				<br>
-				}
-				<br>
-				<br>
-				solutions[<span style="color: #6467ef;">1</span>] <span style="color: #e197f3;"><-</span> counter
+					<br>
+				</span>
+				data <span style="color: #e197f3;">
+					<-< /span> read.table(<span style="color: #6467ef;">"Advent of Code 1.txt"</span>)
+						<br>
+						solutions <span style="color: #e197f3;">
+							<-< /span> rep(<span style="color: #6467ef;">0</span>, <span
+									style="color: #6467ef;">50</span>)
+								<br>
+								counter <span style="color: #e197f3;">
+									<-< /span> <span style="color: #6467ef;">0</span>
+										<br>
+										<br>
+										<span style="color: #e197f3;">for</span> (i <span
+											style="color: #e197f3;">in</span> (<span style="color: #6467ef;">1</span>
+										<span style="color: #e197f3;">:</span> (length(data<span
+											style="color: #e197f3;">$</span>V1) <span style="color: #e197f3;">-</span>
+										<span style="color: #6467ef;">1</span>))) {
+										<br>
+										&nbsp; <span style="color: #e197f3;">if</span> (data<span
+											style="color: #e197f3;">$</span>V1[i] <span style="color: #e197f3;">
+											<< /span> data<span style="color: #e197f3;">$</span>V1[i <span
+													style="color: #e197f3;">+</span> <span
+													style="color: #6467ef;">1</span>]) {
+												<br>
+												&nbsp; &nbsp; counter <span style="color: #e197f3;">
+													<-< /span> counter <span style="color: #e197f3;">+</span> <span
+															style="color: #6467ef;">1</span>
+														<br>
+														&nbsp; }
+														<br>
+														}
+														<br>
+														<br>
+														solutions[<span style="color: #6467ef;">1</span>] <span
+															style="color: #e197f3;">
+															<-< /span> counter
 			</div>
 			Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by Eric
 			Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub written in
@@ -432,25 +453,17 @@
 		</div>
 		<div class="profile-card">
 			<h3>
-				Lydia Brundisch
+				Contact me
 			</h3>
-			<img src="../images/profile.png">
-		</div>
-		<div class="footer"></div>
-		<div class="footer-inner">
-			<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="symbol-link">
-				<img src="../images/linkedin-brands.svg" class="symbol" alt="LinkedIn profile" title="LinkedIn profile">
-			</a>
-			<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="button">
+			<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/">
 				LinkedIn
 			</a>
-			<a href="https://twitter.com/lydiabrundisch" class="symbol-link">
-				<img src="../images/twitter-square-brands.svg" class="symbol" alt="About" title="About">
-			</a>
-			<a href="https://twitter.com/lydiabrundisch" class="button">
+			<br>
+			<a href="https://twitter.com/lydiabrundisch">
 				Twitter
 			</a>
 		</div>
+	</div>
 	</div>
 </body>
 
