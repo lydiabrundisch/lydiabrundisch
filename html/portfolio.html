@@ -10,81 +10,90 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../styles/style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="../styles/style_test.css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
   <!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
 </head>
 
 <body>
-  <div class="navbar">
-    <div id="header" class="p">
-      <a href="../index.html">
-        <img src="../images/home-solid.svg" class="navsymbol" alt="Home" title="Home">
+
+  <div class="container">
+    <div class="navbar"></div>
+    <div class="navbar-inner">
+      <a href="../index.html" class="symbol-link">
+        <img src="../images/home-solid.svg" class="symbol" alt="Home" title="Home">
       </a>
-      <a href="blog.html">
-        <img src="../images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
+      <a href="../index.html" class="button">
+        Home
       </a>
-      <a href="portfolio.html">
-        <img src="../images/archive-solid.svg" class="navsymbol" alt="Portfolio" title="Portfolio" id="current">
+      <a href="blog.html" class="symbol-link">
+        <img src="../images/newspaper-regular.svg" class="symbol" alt="Blog" title="Blog">
       </a>
-      <a href="about.html">
-        <img src="../images/address-card-regular.svg" class="navsymbol" alt="About" title="About">
+      <a href="blog.html" class="button">
+        Blog
       </a>
-      <a href="../index.html">
-        <img src="../images/brains.png" class="navsymbol" id="brain" alt="Brain with headphone pixelart logo."
-          title="Brain with headphone pixelart logo.">
+      <a href="portfolio.html" class="symbol-link">
+        <img src="../images/archive-solid.svg" class="symbol" alt="Portfolio" title="Portfolio" id="current-symbol">
       </a>
-    </div>
-  </div>
-  <div class="main">
-    <div class="p">
-      <h1>
+      <a href="portfolio.html" class="button" id="current-text">
         Portfolio
-      </h1>
+      </a>
+      <a href="about.html" class="symbol-link">
+        <img src="../images/address-card-regular.svg" class="symbol" alt="About" title="About">
+      </a>
+      <a href="about.html" class="button">
+        About
+      </a>
+    </div>
+    <div class="description">
+      <h3>
+        Portfolio
+      </h3>
       This is a repository to archive past research projects. Projects published on other platforms will be linked here.
-      <br>
-      <br>
-      <div class="container-portfolio">
-        <div class="item-portfolio">
-          <h4>
-            Behavioral biology project poster
-          </h4>
-          <img src="../applications/poster food choice.png" alt="Food choice of Formica workers in summer"
-            title="Food choice of Formica workers in summer"
-            onclick="window.open('../applications/poster food choice.pdf', '_blank');">
-        </div>
-        <div class="item-portfolio">
-          <h4>
-            Overview of my skills and my previous projects (p. 1)
-          </h4>
-          <img src="../applications/poster some skills 1.png" alt="Selected skills and M. Sc. projects 1"
-            title="Overview skills and projects"
-            onclick="window.open('../applications/poster some skills.pdf', '_blank');">
-        </div>
-        <div class="item-portfolio">
-          <h4>
-            Overview of my skills and my previous projects (p. 2)
-          </h4>
-          <img src="../applications/poster some skills 2.png" alt="Selected skills and M. Sc. projects 2"
-            title="Overview skills and projects"
-            onclick="window.open('../applications/poster some skills.pdf', '_blank');">
-        </div>
-      </div>
+    </div>
+    <div class="blog-container">
+      <h2>
+        Behavioral biology project poster
+      </h2>
+      <img class="blog-image" src="../applications/poster food choice.png"
+        alt="Food choice of Formica workers in summer" title="Food choice of Formica workers in summer"
+        onclick="window.open('../applications/poster food choice.pdf', '_blank');">
+      <h2>
+        Overview of my skills and my previous projects (p. 1)
+      </h2>
+      <img class="blog-image" src="../applications/poster some skills 1.png" alt="Selected skills and M. Sc. projects 1"
+        title="Overview skills and projects" onclick="window.open('../applications/poster some skills.pdf', '_blank');">
+      <h2>
+        Overview of my skills and my previous projects (p. 2)
+      </h2>
+      <img class="blog-image" src="../applications/poster some skills 2.png" alt="Selected skills and M. Sc. projects 2"
+        title="Overview skills and projects" onclick="window.open('../applications/poster some skills.pdf', '_blank');">
+    </div>
+    <div class="profile-card">
+      <h3>
+        Lydia Brundisch
+      </h3>
+      <img src="../images/profile.png">
+    </div>
+    <div class="footer"></div>
+    <div class="footer-inner">
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="symbol-link">
+        <img src="../images/linkedin-brands.svg" class="symbol" alt="LinkedIn profile" title="LinkedIn profile">
+      </a>
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="button">
+        LinkedIn
+      </a>
+      <a href="https://twitter.com/lydiabrundisch" class="symbol-link">
+        <img src="../images/twitter-square-brands.svg" class="symbol" alt="About" title="About">
+      </a>
+      <a href="https://twitter.com/lydiabrundisch" class="button">
+        Twitter
+      </a>
     </div>
   </div>
-  <br>
-  <div class="footer">
-    <div class="p" id="header">
-      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
-        class="entrylink">
-        <img src="../images/linkedin-brands.svg" class="navsymbol" alt="LinkedIn profile" title="LinkedIn profile">
-      </a>
-      <a href="https://twitter.com/lydiabrundisch" class="entrylink">
-        <img src="../images/twitter-square-brands.svg" class="navsymbol" alt="Twitter profile" title="Twitter profile">
-      </a>
-    </div>
-  </div>
-  <br>
 </body>
 
 </html>

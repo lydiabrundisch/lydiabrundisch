@@ -10,64 +10,74 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="styles/style_test.css" media="all">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
 </head>
 
 <body>
-	<div class="navbar">
-		<div id="header" class="p">
-			<a href="index.html">
-				<img src="images/home-solid.svg" class="navsymbol" alt="Home" title="Home" id="current">
+<div class="container">
+	<div class="navbar"></div>
+	<div class="navbar-inner">
+			<a href="index.html" class="symbol-link">
+				<img src="images/home-solid.svg" class="symbol" alt="Home" title="Home" id="current-symbol">
 			</a>
-			<a href="html/blog.html">
-				<img src="images/newspaper-regular.svg" class="navsymbol" alt="Blog" title="Blog">
+			<a href="index.html" class="button" id="current-text">
+				Home
 			</a>
-			<a href="html/portfolio.html">
-				<img src="images/archive-solid.svg" class="navsymbol" alt="Portfolio" title="Portfolio">
+			<a href="html/blog.html" class="symbol-link">
+				<img src="images/newspaper-regular.svg" class="symbol" alt="Blog" title="Blog">
 			</a>
-			<a href="html/about.html">
-				<img src="images/address-card-regular.svg" class="navsymbol" alt="About" title="About">
+			<a href="html/blog.html" class="button">
+				Blog
 			</a>
-			<a href="index.html">
-				<img src="images/brains.png" class="navsymbol" id="brain" alt="Brain with headphone pixelart logo."
-					title="Brain with headphone pixelart logo.">
+			<a href="html/portfolio.html" class="symbol-link">
+				<img src="images/archive-solid.svg" class="symbol" alt="Portfolio" title="Portfolio">
 			</a>
-		</div>
+			<a href="html/portfolio.html" class="button">
+				Portfolio
+			</a>
+			<a href="html/about.html" class="symbol-link">
+				<img src="images/address-card-regular.svg" class="symbol" alt="About" title="About">
+			</a>
+			<a href="html/about.html" class="button">
+				About
+			</a>
 	</div>
-
   <div class="main">
-	<div class="p" id="index">
+    <div class="hero-gradient"></div>
+    <div class="hero-obsidian">
+      <img src="images/Obsidian_graph_view.png">
+    </div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="text">
 	  <h1>
 		Lydia Brundisch
 	  </h1>
 	  <h4>
-		Research assistant for developmental 
-		<br>
-		psychology and cognitive neuroscience
+		Research assistant for developmental psychology and cognitive neuroscience
 	  </h4>
-	  <img src="images/profile.png" class="profile" alt="Photography of me" title="Photography of me">	
-	  <div class="p" id="background">
-		<div class="p" id="background-top">
-		</div>
-	  </div>
-	</div>
-
   </div>
-	<br>
-	<div class="footer">
-	  <div class="p" id="header">
-		<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/"
-		  class="entrylink">
-		  <img src="images/linkedin-brands.svg" class="navsymbol" alt="LinkedIn profile" title="LinkedIn profile">
+  <div class="profile-image">
+	<img src="images/profile.png" alt="Photography of me" title="Photography of me">
+  </div>
+  <div class="footer"></div>
+  <div class="footer-inner">
+		<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="symbol-link">
+			<img src="images/linkedin-brands.svg" class="symbol" alt="LinkedIn profile" title="LinkedIn profile">
 		</a>
-		<a href="https://twitter.com/lydiabrundisch" class="entrylink">
-		  <img src="images/twitter-square-brands.svg" class="navsymbol" alt="Twitter profile" title="Twitter profile">
+		<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="button">
+			LinkedIn
 		</a>
-	  </div>
-	</div>
-	<br>
+		<a href="https://twitter.com/lydiabrundisch" class="symbol-link">
+			<img src="images/twitter-square-brands.svg" class="symbol" alt="About" title="About">
+		</a>
+		<a href="https://twitter.com/lydiabrundisch" class="button">
+			Twitter
+		</a>
+  </div>
+</div>
 </body>
 
 </html>
