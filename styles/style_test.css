@@ -20,10 +20,11 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 1.5vh 1.5vh;
+  gap: 1.5vh 0;
   height: 100vh;
   margin-top: -1.5vh;
   margin-bottom: -1.5vh;
+  overflow: clip;
 }
 
 h1 {
@@ -135,7 +136,7 @@ a:hover {
 		grid-area: 1 / 1 / 2 / 9;
 	}
 	.main {
-		grid-area: 2 / 1 / 13 / 9;
+		grid-area: 1 / 1 / 12 / 9;
 	}
 }
 
@@ -168,8 +169,11 @@ a:hover {
 }
 
 .hero-obsidian {
-	background-position: bottom;
 	position: absolute;
+}
+
+.hero-obsidian img { 
+	min-width: 125%;
 }
 
 .hero-overlay {
@@ -190,21 +194,27 @@ a:hover {
 .profile-image {
   grid-area: 3 / 5 / 12 / 7;
   display: flex;
-  justify-content: right;
+  justify-content: normal
   z-index: 100;
 }
 
 .profile-image img {
   filter: contrast(1.2);
+  min-height: 100%;
 }
 
 @media (max-width: 1000px) {
 	.text {
-		grid-area: 3 / 2 / 12 / 5;
+		grid-area: 2 / 2 / 12 / 5;
 	}
 	.profile-image {
-  		grid-area: 3 / 2 / 12 / 8;
-		overflow: clip;
+		grid-area: 2 / 4 / 12 / 7;
+	}
+}
+
+@media (max-width: 600px) {
+	.profile-image {
+		grid-area: 2 / 2 / 12 / 7;
 	}
 }
 
