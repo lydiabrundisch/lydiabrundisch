@@ -22,52 +22,79 @@
 
   <div class="container">
     <div class="navbar">
-      <a href="../index.html" class="button" style="width: 14vw;">
+      <a href="../index.html" class="button" style="width: 14vw; margin-left: 1vw;">
         Lydia Brundisch
       </a>
     </div>
     <div class="navbar-inner">
       <a href="../index.html" class="symbol-link">
-        <img src="../images/home-solid.svg" class="symbol" alt="Home" title="Home">
+        <img src="../images/home-solid.svg" class="symbol" alt="House icon representing link to home page"
+          aria-label="Link to home page">
       </a>
       <a href="../index.html" class="button">
         Home
       </a>
       <a href="blog.html" class="symbol-link">
-        <img src="../images/newspaper-regular.svg" class="symbol" alt="Blog" title="Blog">
+        <img src="../images/newspaper-regular.svg" class="symbol" alt="Newspaper icon representing link to blog page"
+          aria-label="Link to blog page">
       </a>
       <a href="blog.html" class="button">
         Blog
       </a>
       <a href="portfolio.html" class="symbol-link">
-        <img src="../images/archive-solid.svg" class="symbol" alt="Portfolio" title="Portfolio" id="current-symbol">
+        <img src="../images/archive-solid.svg" class="symbol" alt="Archive box icon representing link to portfolio page"
+          aria-label="Link to portfolio page" id="current-page">
       </a>
       <a href="portfolio.html" class="button" id="highlight">
         Portfolio
       </a>
       <a href="about.html" class="symbol-link">
-        <img src="../images/address-card-regular.svg" class="symbol" alt="About" title="About">
+        <img src="../images/address-card-regular.svg" class="symbol"
+          alt="Address card icon representing link to about page" aria-label="Link to about page">
       </a>
       <a href="about.html" class="button">
         About
       </a>
     </div>
+		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
+			
+			<div style="position: relative;">
+				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
+					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
+				</button>
+				<script>
+					function dark() {
+						var element = document.body;
+						element.className = "dark";
+					}
+				</script>
+				<button onclick="light()" style="background-color: var(--bgc); border-style: none;">
+					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
+				</button>
+				<script>
+					function light() {
+						var element = document.body;
+						element.className = "light";
+					}
+				</script>
+			</div>
+		</div>
     <div class="description">
       <h3>
         Portfolio
       </h3>
       This is a repository to archive past research projects. Projects published on other platforms will be linked here.
-			<h3>
-				Contact me
-			</h3>
-			<a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="button" id="subtle-highlight">
-				LinkedIn
-			</a>
-			<br>
-			<br>
-			<a href="https://twitter.com/lydiabrundisch" class="button" id="subtle-highlight">
-				Twitter
-			</a>
+      <h3>
+        Contact me
+      </h3>
+      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/" class="button" id="subtle-highlight">
+        LinkedIn
+      </a>
+      <br>
+      <br>
+      <a href="https://twitter.com/lydiabrundisch" class="button" id="subtle-highlight">
+        Twitter
+      </a>
     </div>
     <div class="blog-container">
       <h2>

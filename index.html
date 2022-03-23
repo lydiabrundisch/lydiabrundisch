@@ -24,34 +24,57 @@
 		</div>
 		<div class="navbar-inner">
 			<a href="index.html" class="symbol-link">
-				<img src="images/home-solid.svg" class="symbol" alt="Home" title="Home" id="current-symbol">
+				<img src="images/home-solid.svg" class="symbol" alt="House icon representing link to home page" aria-label="Link to home page" id="current-page">
 			</a>
 			<a href="index.html" class="button" id="highlight">
 				Home
 			</a>
 			<a href="html/blog.html" class="symbol-link">
-				<img src="images/newspaper-regular.svg" class="symbol" alt="Blog" title="Blog">
+				<img src="images/newspaper-regular.svg" class="symbol" alt="Newspaper icon representing link to blog page" aria-label="Link to blog page">
 			</a>
 			<a href="html/blog.html" class="button">
 				Blog
 			</a>
 			<a href="html/portfolio.html" class="symbol-link">
-				<img src="images/archive-solid.svg" class="symbol" alt="Portfolio" title="Portfolio">
+				<img src="images/archive-solid.svg" class="symbol" alt="Archive box icon representing link to portfolio page" aria-label="Link to portfolio page">
 			</a>
 			<a href="html/portfolio.html" class="button">
 				Portfolio
 			</a>
 			<a href="html/about.html" class="symbol-link">
-				<img src="images/address-card-regular.svg" class="symbol" alt="About" title="About">
+				<img src="images/address-card-regular.svg" class="symbol" alt="Address card icon representing link to about page" aria-label="Link to about page">
 			</a>
 			<a href="html/about.html" class="button">
 				About
 			</a>
 		</div>
+		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
+			
+			<div style="position: relative;">
+				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
+					<img src="images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
+				</button>
+				<script>
+					function dark() {
+						var element = document.body;
+						element.className = "dark";
+					}
+				</script>
+				<button onclick="light()" style="background-color: var(--bgc); border-style: none;">
+					<img src="images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
+				</button>
+				<script>
+					function light() {
+						var element = document.body;
+						element.className = "light";
+					}
+				</script>
+			</div>
+		</div>
 		<div class="main">
 			<div class="hero-gradient"></div>
 			<div class="hero-obsidian">
-				<img src="images/Obsidian_graph_view.png">
+				<img src="images/Obsidian_graph_view.png" alt="Screenshot of the graph view of files in my Obsidian knowledge base" title="Screenshot of the graph view of files in my Obsidian knowledge base" aria-label="Background">
 			</div>
 			<div class="hero-overlay"></div>
 		</div>
@@ -64,7 +87,7 @@
 			</h4>
 		</div>
 		<div class="profile-image">
-			<img src="images/profile.png" alt="Photography of me" title="Photography of me">
+			<img src="images/profile.png" alt="Photograph of me" title="Photograph of me" aria-label="Photograph of me">
 		</div>
 	</div>
 </body>

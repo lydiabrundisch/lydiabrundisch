@@ -9,7 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../styles/style_test.css" media="all">
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 	<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -22,35 +23,63 @@
 
 	<div class="container">
 		<div class="navbar">
-			<a href="../index.html" class="button" style="width: 14vw;">
+			<a href="../index.html" class="button" style="width: 14vw; margin-left: 1vw;">
 				Lydia Brundisch
 			</a>
 		</div>
 		<div class="navbar-inner">
 			<a href="../index.html" class="symbol-link">
-				<img src="../images/home-solid.svg" class="symbol" alt="Home" title="Home">
+				<img src="../images/home-solid.svg" class="symbol" alt="House icon representing link to home page"
+					aria-label="Link to home page">
 			</a>
 			<a href="../index.html" class="button">
 				Home
 			</a>
 			<a href="blog.html" class="symbol-link">
-				<img src="../images/newspaper-regular.svg" class="symbol" alt="Blog" title="Blog" id="current-symbol">
+				<img src="../images/newspaper-regular.svg" class="symbol"
+					alt="Newspaper icon representing link to blog page" aria-label="Link to blog page"
+					id="current-page">
 			</a>
 			<a href="blog.html" class="button" id="highlight">
 				Blog
 			</a>
 			<a href="portfolio.html" class="symbol-link">
-				<img src="../images/archive-solid.svg" class="symbol" alt="Portfolio" title="Portfolio">
+				<img src="../images/archive-solid.svg" class="symbol"
+					alt="Archive box icon representing link to portfolio page" aria-label="Link to portfolio page">
 			</a>
 			<a href="portfolio.html" class="button">
 				Portfolio
 			</a>
 			<a href="about.html" class="symbol-link">
-				<img src="../images/address-card-regular.svg" class="symbol" alt="About" title="About">
+				<img src="../images/address-card-regular.svg" class="symbol"
+					alt="Address card icon representing link to about page" aria-label="Link to about page">
 			</a>
 			<a href="about.html" class="button">
 				About
 			</a>
+		</div>
+		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
+			
+			<div style="position: relative;">
+				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
+					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
+				</button>
+				<script>
+					function dark() {
+						var element = document.body;
+						element.className = "dark";
+					}
+				</script>
+				<button onclick="light()" style="background-color: var(--bgc); border-style: none;">
+					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
+				</button>
+				<script>
+					function light() {
+						var element = document.body;
+						element.className = "light";
+					}
+				</script>
+			</div>
 		</div>
 		<div class="description">
 			<h3>
@@ -76,7 +105,9 @@
 				<h2 id="citeless">
 					Citeless bookmarklet
 				</h2>
-				<img class="blog-image" src="../images/citeless.gif">
+				<img class="blog-image" src="../images/citeless.gif"
+					alt="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations"
+					aria-label="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations">
 				I created a bookmarklet to solve a problem I came across today - long lists of citations within a
 				research paper impacting its readability. Check it out on
 				<a href="https://github.com/lydiabrundisch/citeless">
@@ -97,7 +128,10 @@
 					Rainy and sunny days in German towns
 				</h2>
 				<iframe class="blog-image" src="../project_files/weather_widget.html"
-					style="height: 40vh; max-height: 40vw; max-width: 100%; border: none;" onerror="this.src='../images/preview_weather.png';">
+					style="height: 40vh; max-height: 40vw; max-width: 100%; border: none;"
+					onerror="this.src='../images/preview_weather.png';"
+					alt="Interactive diagram of German towns by rainy days and sunny days"
+					title="Interactive diagram of German towns by rainy days and sunny days">
 				</iframe>
 				Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny
 				days for all German towns. The results are very interesting: First, you might want to move to Rügen
@@ -116,7 +150,9 @@
 				<h2 id="haldanes_principle">
 					Haldane's principle, social welfare spending and population size
 				</h2>
-				<img class="blog-image" src="../images/haldanes_principle.png">
+				<img class="blog-image" src="../images/haldanes_principle.png"
+					alt="Diagram of European states' social welfare spending against their population size"
+					aria-label="Diagram of European states' social welfare spending against their population size">
 				In the essay "On Being the Right Size", Haldane ponders animals' anatomical and physiological features
 				as
 				function of their size. In the last paragraphs, he suggests a corresponding relation
@@ -135,7 +171,8 @@
 				<h2 id="whatsapp_exploration">
 					More data viz in JavaScript - Whatsapp edition
 				</h2>
-				<div class="container-vis">
+				<div class="container-vis" alt="Diagrams of messages sent by person over different temporal aspects"
+					aria-label="Diagrams of messages sent by person over different temporal aspects">
 					<div id="vis4"></div>
 					<script>
 						var vlSpec = {
@@ -147,22 +184,22 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by year.",
 							"config": {
 								"axis": {
-									"labelColor": "#dde0f0",
-									"domainColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"domainColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"legend": {
-									"labelColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif"
 								},
 								"title": {
-									"color": "#dde0f0",
+									"color": "#eeeeff",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom"
@@ -192,7 +229,7 @@
 								},
 								"color": {
 									"field": "speaker",
-									"scale": { "range": ["#128C7E", "#fa6965"] },
+									"scale": { "range": ["#006060", "#fa6965"] },
 									"legend": {
 										"orient": "none",
 										"legendX": 5
@@ -213,16 +250,16 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by month.",
 							"config": {
 								"axis": {
-									"labelColor": "#dde0f0",
-									"domainColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"domainColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"title": {
-									"color": "#dde0f0",
+									"color": "#eeeeff",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom",
@@ -247,7 +284,7 @@
 								},
 								"color": {
 									"field": "speaker",
-									"scale": { "range": ["#128C7E", "#fa6965"] },
+									"scale": { "range": ["#006060", "#fa6965"] },
 									"legend": null
 								}
 							}
@@ -265,22 +302,22 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by day.",
 							"config": {
 								"axis": {
-									"labelColor": "#dde0f0",
-									"domainColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"domainColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"legend": {
-									"labelColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif"
 								},
 								"title": {
-									"color": "#dde0f0",
+									"color": "#eeeeff",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom"
@@ -307,7 +344,7 @@
 								},
 								"color": {
 									"field": "speaker",
-									"scale": { "range": ["#128C7E", "#fa6965"] },
+									"scale": { "range": ["#006060", "#fa6965"] },
 									"legend": null
 								}
 							}
@@ -331,7 +368,8 @@
 				<h2 id="vega_lite">
 					Data viz in JavaScript
 				</h2>
-				<div class="container-vis">
+				<div class="container-vis" alt="Diagrams of sample data from predator-prey simulation experiment"
+					aria-label="Diagrams of sample data from predator-prey simulation experiment">
 					<div id="vis"></div>
 					<script>
 						var vlSpec = {
@@ -344,13 +382,13 @@
 							"config": {
 								"axis": {
 									"labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]",
-									"labelColor": "#dde0f0",
-									"domainColor": "#dde0f0",
-									"titleColor": "#dde0f0",
+									"labelColor": "#eeeeff",
+									"domainColor": "#eeeeff",
+									"titleColor": "#eeeeff",
 									"grid": false,
 									"labelAngle": 0
 								},
-								"title": { "color": "#dde0f0", "orient": "bottom" },
+								"title": { "color": "#eeeeff", "orient": "bottom" },
 								"view": { "stroke": null }
 							},
 							"data": {
@@ -369,7 +407,7 @@
 									},
 									"color": {
 										"field": "Category",
-										"scale": { "range": ["#128C7E", "#fa6965", "#4183c4"] },
+										"scale": { "range": ["#006060", "#fa6965", "#4183c4"] },
 										"legend": null
 									}
 								}
@@ -385,7 +423,7 @@
 									},
 									"color": {
 										"field": "Category",
-										"scale": { "range": ["#128C7E", "#fa6965", "#4183c4"] },
+										"scale": { "range": ["#006060", "#fa6965", "#4183c4"] },
 										"legend": null,
 										"tooltip": { "field": "RT", "type": "quantitative" }
 									}
@@ -547,8 +585,6 @@
 		</div>
 		<div class="profile-card">
 		</div>
-	</div>
-	</div>
 	</div>
 </body>
 

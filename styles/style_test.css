@@ -1,7 +1,7 @@
 /* general */
 
 html {
-	background-color: #202020;
+	background-color: var(--g);
 	height: 100%;
 }
 
@@ -9,7 +9,7 @@ body {
 	text-align: justify;
 	margin-left: auto;
 	margin-right: auto;
-	color: #dde0f0;
+	color: var(--c);
 	font-family: 'Poppins', 'Roboto', arial, verdana, sans-serif;
 	font-size: calc(14px + .4vw);
 	font-weight: 300;
@@ -25,19 +25,20 @@ body {
   margin-top: -1.5vh;
   margin-bottom: -1.5vh;
   overflow: clip;
+  background-color: var(--g);
 }
 
 h1 {
 	font-size: 2em;
 	font-weight: 500;
-	border-bottom: solid #128C7E;
+	border-bottom: solid var(--h);
 }
 
 h2 {
 	font-size: 2em;
 	font-weight: 500;
 	text-align: left;
-	border-bottom: solid #128C7E;
+	border-bottom: solid var(--h);
 }
 
 h3 {
@@ -69,7 +70,7 @@ a:hover {
 
 .navbar { 
   grid-area: 1 / 1 / 2 / 9;
-  background-color: #151515;
+  background-color: var(--bgc);
 }
 
 .navbar-inner {
@@ -81,7 +82,7 @@ a:hover {
 
 .button {
   border: none;
-  color: #dde0f0;
+  color: var(--c);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -90,7 +91,7 @@ a:hover {
 }
 
 .symbol {
-  filter: invert() opacity(.3);
+  filter: invert(1) opacity(.3);
   height: 10vh;
   max-height: 30px;
   padding: 3vh;
@@ -98,24 +99,27 @@ a:hover {
 }
 
 .symbol:hover {
-	filter: invert() opacity(.8);
+	filter: invert(1) opacity(.8);
 }
 
 .symbol::selection {
 	background-color: #664400;
 }
 
-#current-symbol {
-	filter: invert() opacity(.8);
+#current-page {
+	filter: invert(0.9) opacity(.8);
 }
 
 #highlight {
-	background-color: #128C7E;
+	background-color: var(--h);
 }
 
 @media (max-width: 1000px) {
 	.button {
 		display: none;
+	}
+	#light-switch-dark, #light-switch-light {
+		display: none !important;
 	}
 }
 
@@ -226,29 +230,29 @@ a:hover {
 .description {
 	grid-area: 2 / 1 / 13 / 3;
 	font-size: 0.7em;
-	background-color: #151515;
+	background-color: var(--bgc);
 	padding: 2vw;
 }
 
 #subtle-highlight {
 	border-style: solid;
-	border-color: #128c7e;
+	border-color: var(--h);
 }
 
 #subtle-highlight:hover {
-	background-color: #dde0f02d;
+	background-color: #eeeeff;
 }
 
 .blog-container {
 	grid-area: 2 / 3 / 13 / 8;
 	overflow-y: scroll;
-	background-color: #151515;
+	background-color: var(--bgc);
 	padding: 2vw;
 }
 
 .tags {
-	font-size: 0.7em;
-	color: #505050;
+	font-size: 0.6em;
+	color: #808080;
 	display: flex;
 	justify-content: end;
 }
@@ -259,7 +263,7 @@ a:hover {
 
 .profile-card {
 	grid-area: 2 / 8 / 13 / 9;
-	background-color: #151515;
+	background-color: var(--bgc);
 	padding: 2vw;
 }
 
@@ -290,7 +294,7 @@ a:hover {
 
 .about-background {
 	grid-area: 2 / 1 / 13 / 9;
-	background-color: #151515;
+	background-color: var(--bgc);
 }
 
 .about-text {
@@ -310,4 +314,70 @@ a:hover {
 #license {
 	display: flex;
 	justify-content: center;
+}
+
+:root {
+	--bgc: #151515;
+	--c: #eeeeff;
+	--h: #006060;
+	--g: #202020;
+}
+
+.dark {
+	--bgc: #151515;
+	--c: #eeeeff;
+	--h: #006060;
+	--g: #202020;
+}
+.light {
+	--bgc: #eeeeee;
+	--c: #151515;
+	--h: #55B5B5;
+	--g: #dfdfdf;
+}
+
+.light h1, h2, h3, h4, h5 {
+	font-weight: bolder;
+}
+
+.light .text {
+	color: var(--bgc);
+}
+
+.light .symbol {
+	filter: invert(0) opacity(0.3);
+}
+
+
+.light #current-page {
+	filter: invert(0.1) opacity(.8);
+}
+
+.light #light-switch-light {
+	display: none;
+}
+
+.dark #light-switch-dark {
+	display: none;
+}
+
+.light #light-switch-dark {
+	display: inline-block;
+}
+
+#light-switch-dark, #light-switch-light {
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	top: -1vh;
+}
+
+#light-switch-dark {
+	filter: invert(0.1) opacity(0.8);
+	display: none;
+	left: 1vw;
+}
+
+#light-switch-light {
+	filter: invert(0.9) opacity(0.8);
 }
