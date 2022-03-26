@@ -1,7 +1,7 @@
 /* general */
 
 html {
-	background-color: var(--g);
+	background-color: var(--h);
 	height: 100%;
 }
 
@@ -16,16 +16,16 @@ body {
 	line-height: 1.7;
 }
 
-.container {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 1.5vh 0;
+  gap: 1px 1px;
   height: 100vh;
-  margin-top: -1.5vh;
+  margin-top: -1vh;
   margin-bottom: -1.5vh;
   overflow: clip;
-  background-color: var(--g);
+  background-color: var(--h);
 }
 
 h1 {
@@ -240,7 +240,8 @@ a:hover {
 }
 
 #subtle-highlight:hover {
-	background-color: #eeeeff;
+	background-color: var(--bgc);
+	font-weight: bolder;
 }
 
 .blog-container {
@@ -257,8 +258,12 @@ a:hover {
 	justify-content: end;
 }
 
-.blog-image {
+.content {
 	width: 100%;
+}
+
+text.gtitle[style], .xtitle[style], .ytitle[style] {
+	fill: none !important;
 }
 
 .profile-card {
@@ -316,32 +321,27 @@ a:hover {
 	justify-content: center;
 }
 
+/* uncleaned dark / light theme */
+
 :root {
 	--bgc: #151515;
 	--c: #eeeeff;
-	--h: #006060;
-	--g: #202020;
+	--h: #202020;
 }
 
 .dark {
 	--bgc: #151515;
 	--c: #eeeeff;
-	--h: #006060;
-	--g: #202020;
+	--h: #202020;
 }
 .light {
 	--bgc: #eeeeee;
 	--c: #151515;
-	--h: #55B5B5;
-	--g: #dfdfdf;
+	--h: #dfdfdf;
 }
 
 .light h1, h2, h3, h4, h5 {
 	font-weight: bolder;
-}
-
-.light .text {
-	color: var(--bgc);
 }
 
 .light .symbol {
@@ -370,6 +370,7 @@ a:hover {
 	position: absolute;
 	text-align: center;
 	top: -1vh;
+	cursor: pointer;
 }
 
 #light-switch-dark {
@@ -380,4 +381,24 @@ a:hover {
 
 #light-switch-light {
 	filter: invert(0.9) opacity(0.8);
+}
+
+.light .hero-overlay {
+	background-color: rgba(238, 238, 238, 0.2);
+}
+
+.light .hero-obsidian {
+	filter: invert(0.75) hue-rotate(90deg);
+}
+
+.light .profile-image {
+	filter: none;
+}
+
+#content-portfolio {
+	filter: brightness(0.7);
+}
+
+.light #content-portfolio {
+	filter: brightness(1);
 }
