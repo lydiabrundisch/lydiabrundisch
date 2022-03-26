@@ -260,6 +260,7 @@ a:hover {
 
 .content {
 	width: 100%;
+	border: 1px solid var(--h);
 }
 
 text.gtitle[style], .xtitle[style], .ytitle[style] {
@@ -277,6 +278,7 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 	max-height: 25vw; 
 	width: 95vw;
 	max-width: 100%; 
+	border: 1px solid var(--h);
 }
 
 @media (max-width: 1000px) {
@@ -319,6 +321,57 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 #license {
 	display: flex;
 	justify-content: center;
+}
+
+.citeless__animation__deletable {
+	position: relative;
+	animation: text-progression 4s ease infinite; 
+}
+
+@keyframes text-progression {
+	0% { }
+	28% { color: var(--bgc); }
+	29% { color: var(--bgc); }
+	100% { color: var(--bgc); }
+}
+
+.citeless__animation__block {
+	position: absolute;
+	animation: block-progression 4s ease infinite; 
+	background-color: var(--h);
+	padding-bottom: 40px;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+@keyframes block-progression {
+	0% { padding-right: 5px; }
+	30% { padding-right: 265px; }
+	60% { padding-right: 25px; }
+	80% { padding-right: 25px; top: 0; padding-bottom: 40px; }
+	90% { padding-right: 25px; top: 40px; padding-bottom: 0;}
+	100% { padding-right: 25px; top: 40px; padding-bottom: 0;}
+}
+
+.citeless__animation__dot {
+	position: absolute;
+	animation: dot-progression 4s ease infinite; 
+	padding: 2px;
+	border-radius: 50%;
+	background-color: var(--c);
+	margin: 0;
+}
+
+@keyframes dot-progression {
+	0% { transform: translate3D(267px, 28px, 0px) }
+	30% { transform: translate3D(267px, 28px, 0px) }
+	60% { transform: translate3D(26px, 28px, 0px) }
+	70% { transform: translate3D(26px, -5px, 0px) }
+	80% { transform: translate3D(12px, -5px, 0px) }
+	90% { transform: translate3D(12px, -5px, 0px) }
+	95% { transform: translate3D(-5px, -5px, 0px) }
+	100% { transform: translate3D(-5px, -5px, 0px) }
 }
 
 /* uncleaned dark / light theme */
@@ -401,4 +454,13 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 
 .light #content-portfolio {
 	filter: brightness(1);
+}
+
+.light #special-light-mode-1 {
+	filter: hue-rotate(180deg) invert();
+}
+
+.light #special-light-mode-2 {
+	filter: hue-rotate(180deg) invert() contrast(0.3);
+	border: none;
 }

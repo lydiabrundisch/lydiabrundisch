@@ -59,7 +59,7 @@
 			</a>
 		</div>
 		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
-			
+
 			<div style="position: relative;">
 				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
 					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
@@ -105,9 +105,19 @@
 				<h2 id="citeless">
 					Citeless bookmarklet
 				</h2>
-				<img class="content" src="../images/citeless.gif"
-					alt="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations"
-					aria-label="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations">
+				<div class="citeless__animation content" style="padding: 5px; font-size: 1.5em;"alt="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations"
+				aria-label="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations">
+					<h5>
+						Citeless removes citations of author and year to improve readability and notetaking speed when
+						working with research papers
+						<span class="citeless__animation__deletable">
+							(Brundisch, 2022).
+							<div class="citeless__animation__block">
+								<div class="citeless__animation__dot">
+							</div>
+						</span>
+					</h5>
+				</div>
 				I created a bookmarklet to solve a problem I came across today - long lists of citations within a
 				research paper impacting its readability. Check it out on
 				<a href="https://github.com/lydiabrundisch/citeless">
@@ -131,7 +141,8 @@
 					style="height: 40vh; max-height: 40vw; max-width: 100%; border: none;"
 					onerror="this.src='../images/preview_weather.png';"
 					alt="Interactive diagram of German towns by rainy days and sunny days"
-					title="Interactive diagram of German towns by rainy days and sunny days">
+					title="Interactive diagram of German towns by rainy days and sunny days"
+					id="special-light-mode-1">
 				</iframe>
 				Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny
 				days for all German towns. The results are very interesting: First, you might want to move to Rügen
@@ -151,8 +162,9 @@
 					Haldane's principle, social welfare spending and population size
 				</h2>
 				<img class="content" src="../images/haldanes_principle.png""
-					alt="Diagram of European states' social welfare spending against their population size"
-					aria-label="Diagram of European states' social welfare spending against their population size">
+					alt=" Diagram of European states' social welfare spending against their population size"
+					aria-label="Diagram of European states' social welfare spending against their population size"
+					id="special-light-mode-2">
 				In the essay "On Being the Right Size", Haldane ponders animals' anatomical and physiological features
 				as
 				function of their size. In the last paragraphs, he suggests a corresponding relation
@@ -184,22 +196,22 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by year.",
 							"config": {
 								"axis": {
-									"labelColor": "#eeeeff",
-									"domainColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"domainColor": "#666",
+									"titleColor": "#666",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"legend": {
-									"labelColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"titleColor": "#666",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif"
 								},
 								"title": {
-									"color": "#eeeeff",
+									"color": "#666",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom"
@@ -250,16 +262,16 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by month.",
 							"config": {
 								"axis": {
-									"labelColor": "#eeeeff",
-									"domainColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"domainColor": "#666",
+									"titleColor": "#666",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"title": {
-									"color": "#eeeeff",
+									"color": "#666",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom",
@@ -302,22 +314,22 @@
 							"description": "Plot showing the number of Whatsapp messages send by Elias and Lydia by day.",
 							"config": {
 								"axis": {
-									"labelColor": "#eeeeff",
-									"domainColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"domainColor": "#666",
+									"titleColor": "#666",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif",
 									"grid": false,
 									"labelAngle": 0
 								},
 								"legend": {
-									"labelColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"titleColor": "#666",
 									"labelFont": "sans-serif",
 									"titleFont": "sans-serif"
 								},
 								"title": {
-									"color": "#eeeeff",
+									"color": "#666",
 									"font": "sans-serif",
 									"subtitleFont": "sans-serif",
 									"orient": "bottom"
@@ -382,13 +394,13 @@
 							"config": {
 								"axis": {
 									"labelExpr": "{'1' : 'Appetitive trials', '2' : 'Aversive trials', '3' : 'Neutral trials'}[datum.label]",
-									"labelColor": "#eeeeff",
-									"domainColor": "#eeeeff",
-									"titleColor": "#eeeeff",
+									"labelColor": "#666",
+									"domainColor": "#666",
+									"titleColor": "#666",
 									"grid": false,
 									"labelAngle": 0
 								},
-								"title": { "color": "#eeeeff", "orient": "bottom" },
+								"title": { "color": "#666", "orient": "bottom" },
 								"view": { "stroke": null }
 							},
 							"data": {
@@ -451,8 +463,8 @@
 					Advent of Code 2021
 				</h2>
 				<div title="code-block"
-					style="background-color: black; font-size: 0.7em; font-family: 'Courier New', Courier, monospace; padding: 5vh;">
-					<span style="color: #9193a3;"># Day 1, Puzzle 1
+					style="border: 1px solid var(--h); font-size: 0.7em; font-family: 'Courier New', Courier, monospace; padding: 5vh;">
+					<span style="color: var(--c);"># Day 1, Puzzle 1
 						<br>
 						<br>
 						## Count the number of times a depth measurement increases from the previous measurement.
