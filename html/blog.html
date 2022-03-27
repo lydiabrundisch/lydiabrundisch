@@ -3,9 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Learning skills for cognitive neuroscience">
+	<meta name="keywords" content="psychology, cognitive science, neuroscience, programming">
+	<meta name="author" content="Lydia Brundisch">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lydia Brundisch - Blog</title>
+	<link rel="alternate" hreflang="en" href="https://lydiabrundisch.github.io/lydiabrundisch/html/blog.html">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -16,6 +20,20 @@
 	<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+	<script>
+		function filter(id) {
+			var b = document.getElementsByClassName("entry");
+			for (let i = 0; i < b.length; i++) {
+				b[i].classList.add("filter");
+			}
+			var a = document.getElementById(id);
+			a = a.innerHTML;
+			a = document.getElementsByClassName(a);
+			for (let i = 0; i < a.length; i++) {
+				a[i].classList.add("results");
+			}
+		}
+	</script>
 	<!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
 </head>
 
@@ -101,12 +119,16 @@
 			</a>
 		</div>
 		<div class="blog-container">
-			<div>
-				<h2 id="citeless">
+			<div class="entry javascript bookmarklet" id="citeless">
+				<h2>
 					Citeless bookmarklet
+					<a href="#citeless">
+						#
+					</a>
 				</h2>
-				<div class="citeless__animation content" style="padding: 5px; font-size: 1.5em;"alt="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations"
-				aria-label="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations">
+				<div class="citeless__animation content" style="font-size: 1.5em;"
+					alt="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations"
+					aria-label="Animation to represent how the citeless bookmarklet can be used to simplify text with lots of citations">
 					<h5>
 						Citeless removes citations of author and year to improve readability and notetaking speed when
 						working with research papers
@@ -114,74 +136,113 @@
 							(Brundisch, 2022).
 							<div class="citeless__animation__block">
 								<div class="citeless__animation__dot">
-							</div>
+								</div>
 						</span>
 					</h5>
 				</div>
-				I created a bookmarklet to solve a problem I came across today - long lists of citations within a
-				research paper impacting its readability. Check it out on
-				<a href="https://github.com/lydiabrundisch/citeless">
-					my GitHub repository
-				</a>
-				or just drag this link to your bookmark bar:
-				<a
-					href="javascript:t=document.getSelection();t=t.toString();t=t.replace(/((\s|\n)\(([^\)]+)\d\d\d\d\))|(\s\(([^\)]+)\n)|((\s|\n)\(([^\)]+)\n\d\d\d\d\))|((\s|\n)\(\d\d\d\d\))/g, '');navigator.clipboard.writeText(t);">
-					citeless
-				</a>
+				<p>
+					I created a bookmarklet to solve a problem I came across today - long lists of citations within a
+					research paper impacting its readability. Check it out on
+					<a href="https://github.com/lydiabrundisch/citeless">
+						my GitHub repository
+					</a>
+					or just drag this link to your bookmark bar:
+					<a
+						href="javascript:t=document.getSelection();t=t.toString();t=t.replace(/((\s|\n)\(([^\)]+)\d\d\d\d\))|(\s\(([^\)]+)\n)|((\s|\n)\(([^\)]+)\n\d\d\d\d\))|((\s|\n)\(\d\d\d\d\))/g, '');navigator.clipboard.writeText(t);">
+						citeless
+					</a>
+				</p>
 				<div class="tags">
-					date: 24-02-2022, last edit: 19-03-2022, tags: JavaScript, bookmarklet
+					date: 24-02-2022, last edit: 19-03-2022, tags:
+					<button class="select" id="javascript-tag" onclick="filter(this.id);">
+						javascript
+					</button>
+					<button class="select" id="boomarklet-tag" onclick="filter(this.id);">
+						bookmarklet
+					</button>
 				</div>
+				<br>
 			</div>
-			<br>
-			<div>
-				<h2 id="weather">
+			<div class="entry weather r" id="weather">
+				<h2>
 					Rainy and sunny days in German towns
+					<a href="#weather">
+						#
+					</a>
 				</h2>
 				<iframe class="content" src="../project_files/weather_widget.html"
 					style="height: 40vh; max-height: 40vw; max-width: 100%; border: none;"
 					onerror="this.src='../images/preview_weather.png';"
 					alt="Interactive diagram of German towns by rainy days and sunny days"
-					title="Interactive diagram of German towns by rainy days and sunny days"
-					id="special-light-mode-1">
+					title="Interactive diagram of German towns by rainy days and sunny days" id="special-light-mode-1">
 				</iframe>
-				Today, I wondered about which German towns have lovely weather. I explored some data on rainy and sunny
-				days for all German towns. The results are very interesting: First, you might want to move to Rügen
-				in the Baltic Sea, and second, the relation of rain to sunshine isn't as simple as I imagined, having
-				no experience with weather data. See the full
-				<a href="../project_files/weather_protocol.html">
-					R Markdown protocol
-				</a>
-				and the widget I created with plotly.
+				<p>
+					Today, I wondered about which German towns have lovely weather. I explored some data on rainy and
+					sunny
+					days for all German towns. The results are very interesting: First, you might want to move to Rügen
+					in the Baltic Sea, and second, the relation of rain to sunshine isn't as simple as I imagined,
+					having
+					no experience with weather data. See the full
+					<a href="../project_files/weather_protocol.html">
+						R Markdown protocol
+					</a>
+					and the widget I created with plotly
+				</p>
 				<div class="tags">
-					date: 08-01-2022, lastedit: 21-01-2021, tags: weather, R
+					date: 08-01-2022, lastedit: 21-01-2021, tags:
+					<button class="select" id="weather-tag" onclick="filter(this.id);">
+						weather
+					</button>
+					<button class="select" id="r-tag" onclick="filter(this.id);">
+						r
+					</button>
 				</div>
+				<br>
 			</div>
-			<br>
-			<div>
-				<h2 id="haldanes_principle">
+			<div class="entry biology politology r" id="haldane">
+				<h2>
 					Haldane's principle, social welfare spending and population size
+					<a href="#haldane">
+						#
+					</a>
 				</h2>
 				<img class="content" src="../images/haldanes_principle.png""
 					alt=" Diagram of European states' social welfare spending against their population size"
 					aria-label="Diagram of European states' social welfare spending against their population size"
 					id="special-light-mode-2">
-				In the essay "On Being the Right Size", Haldane ponders animals' anatomical and physiological features
-				as
-				function of their size. In the last paragraphs, he suggests a corresponding relation
-				between a state's size and its organizational structure, stating that socialism works best in small
-				states. Inspired by this, I plotted European states' social welfare spending against their population
-				size. See the full
-				<a href="../project_files/haldane_principle_protocol.html">
-					R Markdown protocol.
-				</a>
+				<p>
+					In the essay "On Being the Right Size", Haldane ponders animals' anatomical and physiological
+					features
+					as
+					function of their size. In the last paragraphs, he suggests a corresponding relation
+					between a state's size and its organizational structure, stating that socialism works best in small
+					states. Inspired by this, I plotted European states' social welfare spending against their
+					population
+					size. See the full
+					<a href="../project_files/haldane_principle_protocol.html">
+						R Markdown protocol.
+					</a>
+				</p>
 				<div class="tags">
-					date: 05-01-2022, last edit: 21-01-2021, tags: biology, politology, R
+					date: 05-01-2022, last edit: 21-01-2021, tags:
+					<button class="select" id="biology-tag" onclick="filter(this.id);">
+						biology
+					</button>
+					<button class="select" id="politology-tag" onclick="filter(this.id);">
+						politology
+					</button>
+					<button class="select" id="r-tag" onclick="filter(this.id);">
+						r
+					</button>
 				</div>
+				<br>
 			</div>
-			<br>
-			<div>
-				<h2 id="whatsapp_exploration">
+			<div class="entry vega dataviz javascript whatsapp" id="whatsapp">
+				<h2>
 					More data viz in JavaScript - Whatsapp edition
+					<a href="#whatsapp">
+						#
+					</a>
 				</h2>
 				<div class="container-vis" alt="Diagrams of messages sent by person over different temporal aspects"
 					aria-label="Diagrams of messages sent by person over different temporal aspects">
@@ -364,21 +425,41 @@
 						vegaEmbed("#vis2", vlSpec);
 					</script>
 				</div>
-				I spent another evening working on my skill to design plots in JavaScript with the Vega-Lite library.
-				This time, I used a subset of the temporal data of one of my chat logs. Although the visualisations
-				don't
-				communicate information efficiently and wouldn't fit most journal's guidelines, I am surprised by how
-				much I enjoy them aesthetically. I am going to post the write-up of some of my surface level analysis on
-				here
-				soon.
+				<p>
+					I spent another evening working on my skill to design plots in JavaScript with the Vega-Lite
+					library.
+					This time, I used a subset of the temporal data of one of my chat logs. Although the visualisations
+					don't
+					communicate information efficiently and wouldn't fit most journal's guidelines, I am surprised by
+					how
+					much I enjoy them aesthetically. I am going to post the write-up of some of my surface level
+					analysis on
+					here
+					soon.
+				</p>
 				<div class="tags">
-					date: 04-01-2022, last edit: 21-01-2022, tags: vega-lite, data visualization, coding, whatsapp
+					date: 04-01-2022, last edit: 21-01-2022, tags:
+					<button class="select" id="vega-tag" onclick="filter(this.id);">
+						vega
+					</button>
+					<button class="select" id="dataviz-tag" onclick="filter(this.id);">
+						dataviz
+					</button>
+					<button class="select" id="javascript-tag" onclick="filter(this.id);">
+						javascript
+					</button>
+					<button class="select" id="whatsapp-tag" onclick="filter(this.id);">
+						whatsapp
+					</button>
 				</div>
+				<br>
 			</div>
-			<br>
-			<div>
-				<h2 id="vega_lite">
+			<div class="entry vega dataviz javascript" id="vega">
+				<h2>
 					Data viz in JavaScript
+					<a href="#vega">
+						#
+					</a>
 				</h2>
 				<div class="container-vis" alt="Diagrams of sample data from predator-prey simulation experiment"
 					aria-label="Diagrams of sample data from predator-prey simulation experiment">
@@ -445,22 +526,37 @@
 						vegaEmbed("#vis", vlSpec);
 					</script>
 				</div>
-				I spent this evening messing around with the
-				<a href="https://vega.github.io/vega-lite/">
-					JS Vega-Lite library
-				</a>
-				to display simple graphs. Being new to JavaScript, even simple plots took some time to figure out. I
-				used a tiny subset of the data from the predator-prey simulation experiment I conducted last semester
-				for
-				this exercise. I am going to provide a full write-up of the experiment, the code, and data soon.
+				<p>
+					I spent this evening messing around with the
+					<a href="https://vega.github.io/vega-lite/">
+						JS Vega-Lite library
+					</a>
+					to display simple graphs. Being new to JavaScript, even simple plots took some time to figure out. I
+					used a tiny subset of the data from the predator-prey simulation experiment I conducted last
+					semester
+					for
+					this exercise. I am going to provide a full write-up of the experiment, the code, and data soon.
+				</p>
 				<div class="tags">
-					date: 30-12-2021, last edit: 29-01-2022, tags: vega-lite, data visualization, coding
+					date: 30-12-2021, last edit: 29-01-2022, tags:
+					<button class="select" id="vega-tag" onclick="filter(this.id);">
+						vega
+					</button>
+					<button class="select" id="dataviz-tag" onclick="filter(this.id);">
+						dataviz
+					</button>
+					<button class="select" id="javascript-tag" onclick="filter(this.id);">
+						javascript
+					</button>
 				</div>
+				<br>
 			</div>
-			<br>
-			<div>
-				<h2 id="advent_of_code_2021">
+			<div class="entry r" id="advent_of_code_2021">
+				<h2>
 					Advent of Code 2021
+					<a href="#advent_of_code_2021">
+						#
+					</a>
 				</h2>
 				<div title="code-block"
 					style="border: 1px solid var(--h); font-size: 0.7em; font-family: 'Courier New', Courier, monospace; padding: 5vh;">
@@ -574,22 +670,30 @@
 																<- </span>
 																	counter
 				</div>
-				Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by Eric
-				Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub
-				written in
-				R, so I wanted to share my work so far. You can find my code for the first ten puzzles as of today on
-				<a href="https://github.com/lydiabrundisch/adventofcode">
-					my GitHub repository.
-				</a>
-				To read the full tasks and get sample data to test my code, check the
-				<a href="https://adventofcode.com/2021">
-					website of the project.
-				</a>
+				<p>
+					Over the past days, I attempted to solve some of the coding challenges of Advent of Code 2021 by
+					Eric
+					Wastl. While my code is still awkward and barely annotated, there aren't many solutions on GitHub
+					written in
+					R, so I wanted to share my work so far. You can find my code for the first ten puzzles as of today
+					on
+					<a href="https://github.com/lydiabrundisch/adventofcode">
+						my GitHub repository.
+					</a>
+					To read the full tasks and get sample data to test my code, check the
+					<a href="https://adventofcode.com/2021">
+						website of the project.
+					</a>
+				</p>
 				<div class="tags">
-					date: 24-12-2021, edit: 21-01-2022, tags: R, coding
+					date: 24-12-2021, edit: 21-01-2022, tags:
+					<button class="select" id="r-tag" onclick="filter(this.id);">
+						r
+					</button>
 				</div>
+				<br>
 			</div>
-			<div>
+			<div class="entry results">
 				<h5>
 					Sorry, this is the end of this blog!
 				</h5>

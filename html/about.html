@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Learning skills for cognitive neuroscience">
+  <meta name="keywords" content="psychology, cognitive science, neuroscience, programming">
+  <meta name="author" content="Lydia Brundisch">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lydia Brundisch - About</title>
+  <link rel="alternate" hreflang="en" href="https://lydiabrundisch.github.io/lydiabrundisch/html/about.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -21,137 +25,147 @@
 <body>
 
   <div class="grid-container">
-		<div class="navbar">
-			<a href="../index.html" class="button" style="width: 14vw; margin-left: 1vw;">
-				Lydia Brundisch
-			</a>
-		</div>
-		<div class="navbar-inner">
-			<a href="../index.html" class="symbol-link">
-				<img src="../images/home-solid.svg" class="symbol" alt="House icon representing link to home page" aria-label="Link to home page">
-			</a>
-			<a href="../index.html" class="button">
-				Home
-			</a>
-			<a href="blog.html" class="symbol-link">
-				<img src="../images/newspaper-regular.svg" class="symbol" alt="Newspaper icon representing link to blog page" aria-label="Link to blog page">
-			</a>
-			<a href="blog.html" class="button">
-				Blog
-			</a>
-			<a href="portfolio.html" class="symbol-link">
-				<img src="../images/archive-solid.svg" class="symbol" alt="Archive box icon representing link to portfolio page" aria-label="Link to portfolio page">
-			</a>
-			<a href="portfolio.html" class="button">
-				Portfolio
-			</a>
-			<a href="about.html" class="symbol-link">
-				<img src="../images/address-card-regular.svg" class="symbol" alt="Address card icon representing link to about page" aria-label="Link to about page" id="current-page">
-			</a>
-			<a href="about.html" class="button" id="highlight">
-				About
-			</a>
-		</div>
-		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
-			
-			<div style="position: relative;">
-				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
-					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
-				</button>
-				<script>
-					function dark() {
-						var element = document.body;
-						element.className = "dark";
-					}
-				</script>
-				<button onclick="light()" style="background-color: var(--bgc); border-style: none;">
-					<img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
-				</button>
-				<script>
-					function light() {
-						var element = document.body;
-						element.className = "light";
-					}
-				</script>
-			</div>
-		</div>
+    <div class="navbar">
+      <a href="../index.html" class="button" style="width: 14vw; margin-left: 1vw;">
+        Lydia Brundisch
+      </a>
+    </div>
+    <div class="navbar-inner">
+      <a href="../index.html" class="symbol-link">
+        <img src="../images/home-solid.svg" class="symbol" alt="House icon representing link to home page"
+          aria-label="Link to home page">
+      </a>
+      <a href="../index.html" class="button">
+        Home
+      </a>
+      <a href="blog.html" class="symbol-link">
+        <img src="../images/newspaper-regular.svg" class="symbol" alt="Newspaper icon representing link to blog page"
+          aria-label="Link to blog page">
+      </a>
+      <a href="blog.html" class="button">
+        Blog
+      </a>
+      <a href="portfolio.html" class="symbol-link">
+        <img src="../images/archive-solid.svg" class="symbol" alt="Archive box icon representing link to portfolio page"
+          aria-label="Link to portfolio page">
+      </a>
+      <a href="portfolio.html" class="button">
+        Portfolio
+      </a>
+      <a href="about.html" class="symbol-link">
+        <img src="../images/address-card-regular.svg" class="symbol"
+          alt="Address card icon representing link to about page" aria-label="Link to about page" id="current-page">
+      </a>
+      <a href="about.html" class="button" id="highlight">
+        About
+      </a>
+    </div>
+    <div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
+
+      <div style="position: relative;">
+        <button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
+          <img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
+        </button>
+        <script>
+          function dark() {
+            var element = document.body;
+            element.className = "dark";
+          }
+        </script>
+        <button onclick="light()" style="background-color: var(--bgc); border-style: none;">
+          <img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
+        </button>
+        <script>
+          function light() {
+            var element = document.body;
+            element.className = "light";
+          }
+        </script>
+      </div>
+    </div>
     <div class="about-background"></div>
     <div class="about-text">
-      <h1>
-        About
-      </h1>
-      <span style="font-style: italic;">
-        M. Sc. Cognitive Science student
+      <div class="entry">
+        <h1>
+          About
+        </h1>
+        <span style="font-style: italic;">
+          M. Sc. Cognitive Science student
+          <br>
+          &nbsp;
+          <a href="https://www.uni-potsdam.de/en/cosec-students/">
+            @UniPotsdam
+          </a>
+          <br>
+          Research assistant at the the Max Planck Institute for Human
+          Development
+          <br>
+          &nbsp;
+          <a href="https://www.mpib-berlin.mpg.de/research/research-centers/lifespan-psychology">
+            @LifespanPsychology
+          </a> - currently with a focus on semantic learning in children - and
+          <br>
+          &nbsp;
+          <a href="https://schucklab.gitlab.io/">
+            @NeuroCode
+          </a> - currently with a focus on value representations in the brain
+        </span>
         <br>
-        &nbsp;
-        <a href="https://www.uni-potsdam.de/en/cosec-students/">
-          @UniPotsdam
+        <br>
+        On my blog, I share my leisure and coursework projects in the spirit of open science and showing my
+        work as I learn. Many posts will therefore loosely relate to psychology and cognitive neuroscience, programming,
+        and science
+        communication.
+        <br>
+        <br>
+        If you want to get in contact, please do so on
+        <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/">
+          LinkedIn
+        </a>
+        or
+        <a href="https://twitter.com/lydiabrundisch">
+          Twitter.
         </a>
         <br>
-        Research assistant at the the Max Planck Institute for Human
-        Development
         <br>
-        &nbsp;
-        <a href="https://www.mpib-berlin.mpg.de/research/research-centers/lifespan-psychology">
-          @LifespanPsychology
-        </a> - currently with a focus on semantic learning in children - and 
+      </div>
+      <div class="entry">
+        <h2>
+          Copyright licenses
+        </h2>
+        <a id="license" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">
+          <img alt="Creative Commons License" style="border-width:0;"
+            src="https://i.creativecommons.org/l/by-sa/3.0/de/88x31.png">
+        </a>
         <br>
-        &nbsp;
-        <a href="https://schucklab.gitlab.io/">
-          @NeuroCode
-        </a> - currently with a focus on value representations in the brain
-      </span>
-      <br>
-      <br>
-      On my blog, I share my leisure and coursework projects in the spirit of open science and showing my
-      work as I learn. Many posts will therefore loosely relate to psychology and cognitive neuroscience, programming,
-      and science
-      communication.
-      <br>
-      <br>
-      If you want to get in contact, please do so on
-      <a href="https://www.linkedin.com/in/lydia-brundisch-3130591bb/">
-        LinkedIn
-      </a>
-      or
-      <a href="https://twitter.com/lydiabrundisch">
-        Twitter.
-      </a>
-      <br>
-      <h2>
-        Copyright licenses
-      </h2>
-      <a id="license" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">
-        <img alt="Creative Commons License" style="border-width:0;"
-          src="https://i.creativecommons.org/l/by-sa/3.0/de/88x31.png">
-      </a>
-      <br>
-      All .png, .gif, .ico files, and .pdf files, and all texts
-      on this website - excluding the Creative Commons icons - are created by me and licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">
-        Creative Commons Attribution-ShareAlike 3.0 Germany License
-      </a>
-      . The hero image on my home page is a screenshot of my second brain - my personal knowledge base in
-      <a href="https://obsidian.md/">
-        Obsidian
-      </a>
-      - with the nodes modified to be semi-transparent.
-      <br>
-      <br>
-      <a id="license" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-        <img alt="Creative Commons License" style="border-width:0"
-          src="https://i.creativecommons.org/l/by/4.0/88x31.png">
-      </a>
-      <br>
-      All .svg files on this website are created and distributed by
-      <a href="https://fontawesome.com/">
-        Fontawesome
-      </a>
-      and licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-        Creative Commons Attribution 4.0 International License
-      </a>
-      .
+        All .png, .gif, .ico files, and .pdf files, and all texts
+        on this website - excluding the Creative Commons icons - are created by me and licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/de/">
+          Creative Commons Attribution-ShareAlike 3.0 Germany License.
+        </a>
+        The hero image on my home page is a screenshot of my second brain - my personal knowledge base in
+        <a href="https://obsidian.md/">
+          Obsidian
+        </a>
+        - with the nodes modified to be semi-transparent.
+        <br>
+        <br>
+        <a id="license" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+        </a>
+        <br>
+        All .svg files on this website are created and distributed by
+        <a href="https://fontawesome.com/">
+          Fontawesome
+        </a>
+        and licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          Creative Commons Attribution 4.0 International License.
+        </a>
+        <br>
+        <br>
+      </div>
     </div>
   </div>
 </body>

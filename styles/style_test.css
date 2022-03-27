@@ -31,14 +31,12 @@ body {
 h1 {
 	font-size: 2em;
 	font-weight: 500;
-	border-bottom: solid var(--h);
 }
 
 h2 {
 	font-size: 2em;
 	font-weight: 500;
 	text-align: left;
-	border-bottom: solid var(--h);
 }
 
 h3 {
@@ -235,8 +233,7 @@ a:hover {
 }
 
 #subtle-highlight {
-	border-style: solid;
-	border-color: var(--h);
+	border: 1px solid var(--h);
 }
 
 #subtle-highlight:hover {
@@ -251,11 +248,36 @@ a:hover {
 	padding: 2vw;
 }
 
+.entry {
+	border-bottom: 1px solid var(--h);
+}
+
 .tags {
 	font-size: 0.6em;
 	color: #808080;
 	display: flex;
 	justify-content: end;
+}
+
+.select {
+	color: inherit;
+	background-color: var(--bgc);
+	border: 1px solid var(--h);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.select:hover {
+	filter: brightness(1.2);
+}
+
+.filter {
+	display: none;
+}
+
+.results {
+	display: initial;
 }
 
 .content {
@@ -400,7 +422,6 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 .light .symbol {
 	filter: invert(0) opacity(0.3);
 }
-
 
 .light #current-page {
 	filter: invert(0.1) opacity(.8);
