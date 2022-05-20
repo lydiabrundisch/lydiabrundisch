@@ -266,10 +266,15 @@ a:hover {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+	font-family: inherit;
+	font-size: inherit;
+	margin-top: -0.1em;
+	font-weight: inherit;
+	cursor: pointer;
 }
 
 .select:hover {
-	filter: brightness(1.2);
+	background-color: var(--h);
 }
 
 .filter {
@@ -412,7 +417,7 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 .light {
 	--bgc: #eeeeee;
 	--c: #151515;
-	--h: #dfdfdf;
+	--h: #dddddd;
 }
 
 .light h1, h2, h3, h4, h5 {
@@ -462,7 +467,7 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 }
 
 .light .hero-obsidian {
-	filter: invert(0.75) hue-rotate(90deg);
+	filter: invert(1) hue-rotate(90deg);
 }
 
 .light .profile-image {
@@ -484,4 +489,8 @@ text.gtitle[style], .xtitle[style], .ytitle[style] {
 .light #special-light-mode-2 {
 	filter: hue-rotate(180deg) invert() contrast(0.3);
 	border: none;
+}
+
+.light a:hover {
+	filter: brightness(0.95);
 }
