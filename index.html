@@ -12,8 +12,9 @@
 	<link rel="alternate" hreflang="en" href="https://lydiabrundisch.github.io/lydiabrundisch/html/index.html">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/style_test.css" media="all">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<!-- All .svg files are created and distributed by https://fontawesome.com/ are licensed under a Creative Commons Attribution 4.0 International License. See the about page for more details. -->
@@ -28,32 +29,36 @@
 		</div>
 		<div class="navbar-inner">
 			<a href="index.html" class="symbol-link">
-				<img src="images/home-solid.svg" class="symbol" alt="House icon representing link to home page" aria-label="Link to home page" id="current-page">
+				<img src="images/home-solid.svg" class="symbol" alt="House icon representing link to home page"
+					aria-label="Link to home page" id="current-page">
 			</a>
 			<a href="index.html" class="button" id="highlight">
 				Home
 			</a>
 			<a href="html/blog.html" class="symbol-link">
-				<img src="images/newspaper-regular.svg" class="symbol" alt="Newspaper icon representing link to blog page" aria-label="Link to blog page">
+				<img src="images/newspaper-regular.svg" class="symbol"
+					alt="Newspaper icon representing link to blog page" aria-label="Link to blog page">
 			</a>
 			<a href="html/blog.html" class="button">
 				Blog
 			</a>
 			<a href="html/portfolio.html" class="symbol-link">
-				<img src="images/archive-solid.svg" class="symbol" alt="Archive box icon representing link to portfolio page" aria-label="Link to portfolio page">
+				<img src="images/archive-solid.svg" class="symbol"
+					alt="Archive box icon representing link to portfolio page" aria-label="Link to portfolio page">
 			</a>
 			<a href="html/portfolio.html" class="button">
 				Portfolio
 			</a>
 			<a href="html/about.html" class="symbol-link">
-				<img src="images/address-card-regular.svg" class="symbol" alt="Address card icon representing link to about page" aria-label="Link to about page">
+				<img src="images/address-card-regular.svg" class="symbol"
+					alt="Address card icon representing link to about page" aria-label="Link to about page">
 			</a>
 			<a href="html/about.html" class="button">
 				About
 			</a>
 		</div>
 		<div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
-			
+
 			<div style="position: relative;">
 				<button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
 					<img src="images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
@@ -78,7 +83,9 @@
 		<div class="main">
 			<div class="hero-gradient"></div>
 			<div class="hero-obsidian">
-				<img src="images/Obsidian_graph_view.png" alt="Screenshot of the graph view of files in my Obsidian knowledge base" title="Screenshot of the graph view of files in my Obsidian knowledge base" aria-label="Background">
+				<img src="images/Obsidian_graph_view.png"
+					alt="Screenshot of the graph view of files in my Obsidian knowledge base"
+					title="Screenshot of the graph view of files in my Obsidian knowledge base" aria-label="Background">
 			</div>
 			<div class="hero-overlay"></div>
 		</div>
@@ -94,6 +101,22 @@
 			<img src="images/profile.png" alt="Photograph of me" title="Photograph of me" aria-label="Photograph of me">
 		</div>
 	</div>
+	<svg class="institutions" alt="My associations: UP CogSci, MPIB NeuroCode, and MPIB LifespanPsychology" style="position: absolute; top: 190px; left: 200px; " height="400" width="850" stroke-width="0.1">
+		<path d="M 50 50 l 400 300" fill="none" />
+		<path d="M 450 350 l 130 -150" fill="none" />
+		<path d="M 580 200 l -530 -150" fill="none" />
+		<g stroke-width="6">
+			<circle id="UP" cx="50" cy="50" r="3" stroke="blue" />
+			<circle id="NC" cx="450" cy="350" r="3" stroke="purple" />
+			<circle id="LIP" cx="580" cy="200" r="3" stroke="pink" />
+		</g>
+		<g stroke-width="0.1">
+			<text x="70" y="55"> UP CogSci </text>
+			<text x="470" y="355"> MPIB NeuroCode </text>
+			<text x="600" y="205"> MPIB LifespanPsychology </text>
+		</g>
+	</svg>
+	<div class="institutions-animation" alt="Animatied highlight between my associations"></div>
 </body>
 
 </html>
