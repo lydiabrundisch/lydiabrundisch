@@ -618,9 +618,9 @@ text.gtitle[style],
 }
 
 .light {
-	--bgc: #eeeeee;
+	--bgc: #ffffff;
 	--c: #151515;
-	--h: #dddddd;
+	--h: #eeeeee;
 }
 
 h1,
