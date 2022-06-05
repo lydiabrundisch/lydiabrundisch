@@ -25,7 +25,25 @@
 
   <div class="grid-container">
     <div class="navbar">
-      <a href="../index.html" class="button" style="width: 14vw; margin-left: 1vw;">
+      <button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
+        <img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
+      </button>
+      <script>
+        function dark() {
+          var element = document.body;
+          element.className = "dark";
+        }
+      </script>
+      <button onclick="light()" style="background-color: var(--bgc); border-style: none;">
+        <img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
+      </button>
+      <script>
+        function light() {
+          var element = document.body;
+          element.className = "light";
+        }
+      </script>
+      <a href="../index.html" class="button" style="width: 14vw; margin-left: 3vw;">
         Lydia Brundisch
       </a>
     </div>
@@ -58,29 +76,6 @@
       <a href="about.html" class="button" id="highlight">
         About
       </a>
-    </div>
-    <div style="grid-area: 1 / 8 / 2 / 9; display: flex; justify-content: center;">
-
-      <div style="position: relative;">
-        <button onclick="dark()" style="background-color: var(--bgc); border-style: none;">
-          <img src="../images/circle-half-stroke-solid.svg" id="light-switch-dark" class="symbol">
-        </button>
-        <script>
-          function dark() {
-            var element = document.body;
-            element.className = "dark";
-          }
-        </script>
-        <button onclick="light()" style="background-color: var(--bgc); border-style: none;">
-          <img src="../images/circle-half-stroke-solid.svg" id="light-switch-light" class="symbol">
-        </button>
-        <script>
-          function light() {
-            var element = document.body;
-            element.className = "light";
-          }
-        </script>
-      </div>
     </div>
     <div class="about-background"></div>
     <div class="about-text">
