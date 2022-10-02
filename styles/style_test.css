@@ -132,7 +132,12 @@ a:hover {
 }
 
 #highlight {
-	background-color: var(--blue);
+	border-bottom: 1px solid var(--linkblue);
+	color: var(--c)
+}
+
+#highlight:hover {
+	filter: none;
 }
 
 @media (max-width: 1000px) {
@@ -227,7 +232,7 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(10, 10, 10, 0.5);
+	background-color: hsla(231, 80%, 8%, 0.5);
 	z-index: 150;
 }
 
@@ -370,6 +375,11 @@ a:hover {
 	background-color: var(--bgc);
 	padding: 2vw;
 	padding-right: 8vw;
+	color: #abacba;
+}
+
+.description h3 {
+	color: var(--c);
 }
 
 #subtle-highlight {
@@ -397,7 +407,7 @@ a:hover {
 
 .tags {
 	font-size: 0.6em;
-	color: #808080;
+	color: #abacba;
 	display: flex;
 	justify-content: end;
 }
@@ -613,27 +623,24 @@ text.gtitle[style],
 /* uncleaned dark / light theme */
 
 :root {
-	--bgc: #151515;
+	--bgc: #0d0f1a;
 	--c: #eeeeff;
-	--h: #202020;
-	--blue: #55a4f4;
-	--linkblue: #55a4f4;
+	--h: #202a79;
+	--linkblue: #263bd9;
 }
 
 .dark {
-	--bgc: #151515;
+	--bgc: #0d0f1a;
 	--c: #eeeeff;
-	--h: #202020;
-	--blue: #55a4f4;
-	--linkblue: #55a4f4;
+	--h: #202a79;
+	--linkblue: #263bd9;
 }
 
 .light {
-	--bgc: #ffffff;
+	--bgc: hsl(231, 32%, 97%);
 	--c: #151515;
-	--h: #eeeeee;
-	--blue: #E9F0F7;
-	--linkblue: #738AA2;
+	--h: #202a79;
+	--linkblue: #263bd9;
 }
 
 .light {
