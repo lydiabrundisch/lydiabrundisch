@@ -626,21 +626,21 @@ text.gtitle[style],
 	--bgc: #0d0f1a;
 	--c: #eeeeff;
 	--h: #202a79;
-	--linkblue: #263bd9;
+	--linkblue: #8690df;
 }
 
 .dark {
 	--bgc: #0d0f1a;
 	--c: #eeeeff;
 	--h: #202a79;
-	--linkblue: #263bd9;
+	--linkblue: #8690df;
 }
 
 .light {
 	--bgc: hsl(231, 32%, 97%);
 	--c: #151515;
 	--h: #202a79;
-	--linkblue: #263bd9;
+	--linkblue: #8690df;
 }
 
 .light {
