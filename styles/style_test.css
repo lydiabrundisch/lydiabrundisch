@@ -599,6 +599,28 @@ text.gtitle[style],
 	}
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.flex-column p,h4 {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 1px;
+	border: 2px solid var(--h);
+}
+
+.flex-column h4 {
+	background-color: var(--h);
+}
+
 @media (max-width: 1000px) {
 
 	.main,
