@@ -610,7 +610,7 @@ text.gtitle[style],
 	flex: 1;
 }
 
-.flex-column p,h4 {
+.flex-column p {
 	margin: 5px;
 	padding: 5px;
 	border-radius: 1px;
@@ -618,6 +618,10 @@ text.gtitle[style],
 }
 
 .flex-column h4 {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 1px;
+	border: 2px solid var(--h);
 	background-color: var(--h);
 }
 
@@ -661,7 +665,7 @@ text.gtitle[style],
 .light {
 	--bgc: hsl(231, 32%, 97%);
 	--c: #151515;
-	--h: #202a79;
+	--h: #8690df;
 	--linkblue: #8690df;
 }
 
